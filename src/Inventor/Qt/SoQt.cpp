@@ -1,33 +1,24 @@
 /**************************************************************************\
- * Copyright (c) Kongsberg Oil & Gas Technologies AS
- * All rights reserved.
- * 
- * Redistribution and use in source and binary forms, with or without
- * modification, are permitted provided that the following conditions are
- * met:
- * 
- * Redistributions of source code must retain the above copyright notice,
- * this list of conditions and the following disclaimer.
- * 
- * Redistributions in binary form must reproduce the above copyright
- * notice, this list of conditions and the following disclaimer in the
- * documentation and/or other materials provided with the distribution.
- * 
- * Neither the name of the copyright holder nor the names of its
- * contributors may be used to endorse or promote products derived from
- * this software without specific prior written permission.
- * 
- * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
- * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
- * LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
- * A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
- * HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
- * SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
- * LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
- * DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
- * THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
- * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
- * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ *
+ *  This file is part of the Coin 3D visualization library.
+ *  Copyright (C) by Kongsberg Oil & Gas Technologies.
+ *
+ *  This library is free software; you can redistribute it and/or
+ *  modify it under the terms of the GNU General Public License
+ *  ("GPL") version 2 as published by the Free Software Foundation.
+ *  See the file LICENSE.GPL at the root directory of this source
+ *  distribution for additional information about the GNU GPL.
+ *
+ *  For using Coin with software that can not be combined with the GNU
+ *  GPL, and for taking advantage of the additional benefits of our
+ *  support services, please contact Kongsberg Oil & Gas Technologies
+ *  about acquiring a Coin Professional Edition License.
+ *
+ *  See http://www.coin3d.org/ for more information.
+ *
+ *  Kongsberg Oil & Gas Technologies, Bygdoy Alle 5, 0257 Oslo, NORWAY.
+ *  http://www.sim.no/  sales@sim.no  coin-support@coin3d.org
+ *
 \**************************************************************************/
 
 // *************************************************************************
@@ -115,7 +106,6 @@
     // Clean up resources.
     delete eviewer;
     root->unref();
-    SoQt::done();
 
     return 0;
   }
@@ -198,7 +188,25 @@
 
   </ul>
 
-  %SoQt is released publicly under the 3-clause BSD license.
+  The %SoQt library is "dual-licensed", which means it's available
+  either under a Free Software license (specifically the <a
+  href="http://www.fsf.org/copyleft/gpl.html">GNU General Public
+  License</a>), or a license better suited for the development of
+  proprietary / commercial applications: our <a
+  href="http://www.coin3d.org">Coin Professional Edition License</a>.
+
+  Note that to use %SoQt under the GNU General Public License, you
+  have to comply with that license's restrictions. These restrictions
+  are \e not well suited for the development of non-Free software, so
+  the availability of %SoQt under the GNU GPL is primarily meant to be
+  a service to the Free Software community. We \e strongly advise you
+  to invest in the Coin Professional Edition License for using %SoQt
+  in proprietary development projects. As a Coin Professional Edition
+  License holder, you gain the rights to use the %SoQt library in just
+  about any way you like. See the Coin web site at
+  <http://www.coin3d.org> for more information on the advantages of
+  the Coin Professional Edition License, and how to become a license
+  holder.
 
   For those who are using the implementations of the Inventor API from
   either SGI or TGS, we would like to point out that %SoQt can also be
@@ -858,6 +866,10 @@ SoQt::mainLoop(void)
 // which means we would run into issues doing the usual...
 //    SoQt::mainLoop();
 //    root->unref();
+// FIXME: Is this what we want? Should the user explicitly have to call
+// SoQt::done()? If so, we should fix up our sample code to do so
+// too... 20060210 kyrah
+
 #if 0
   // The invocation of SoQt::done() used to be triggered from
   // atexit(), but this was changed as we were getting mysterious

@@ -1,0 +1,10 @@
+﻿Build started 04-06-2015 14:42:20.
+     1>Project "C:\Users\automacao\Documents\GitHub\SoQt\build\msvc12\soqt1.vcxproj" on node 2 (CustomBuild target(s)).
+     1>CustomBuild:
+         subst'ing C:\Users\automacao\Documents\GitHub\SoQt\src\Inventor\Qt\common\nodes\ClickCounter.cpp.in
+     1>csubst : error : no input file '..\..\src\Inventor\Qt\common\nodes\ClickCounter.cpp.in'
+     1>Done Building Project "C:\Users\automacao\Documents\GitHub\SoQt\build\msvc12\soqt1.vcxproj" (CustomBuild target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.03

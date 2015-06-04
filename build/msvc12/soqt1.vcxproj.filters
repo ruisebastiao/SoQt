@@ -1,0 +1,824 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Documents">
+      <UniqueIdentifier>{59555583-3e90-48dd-908a-e6a96a859b51}</UniqueIdentifier>
+      <Extensions>;txt</Extensions>
+    </Filter>
+    <Filter Include="Template Files">
+      <UniqueIdentifier>{5cb964c6-31a7-4c88-a087-36f0bf9f71b9}</UniqueIdentifier>
+      <Extensions>in</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{128f04ab-77c7-4d05-9007-9a6c7263c8b0}</UniqueIdentifier>
+      <Extensions>c;cpp;ic;icc;h</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Qt/devices sources">
+      <UniqueIdentifier>{3f59e26f-d034-48cc-a1fe-2ab51f0bb32c}</UniqueIdentifier>
+      <Extensions>c;cpp;ic;icc;h</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Qt/editors sources">
+      <UniqueIdentifier>{56149e69-b76c-42cb-9697-4bdb841aaccd}</UniqueIdentifier>
+      <Extensions>c;cpp;ic;icc;h</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Qt/engines sources">
+      <UniqueIdentifier>{98219116-933a-40e6-9b0a-3d5ecc872719}</UniqueIdentifier>
+      <Extensions>c;cpp;ic;icc;h</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Qt/nodes sources">
+      <UniqueIdentifier>{0c87825b-34b3-4cb6-b050-a6b329e2081e}</UniqueIdentifier>
+      <Extensions>c;cpp;ic;icc;h</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Qt/viewers sources">
+      <UniqueIdentifier>{38aadbcb-1121-45b6-b2bb-e1f94360330c}</UniqueIdentifier>
+      <Extensions>c;cpp;ic;icc;h</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Qt/widgets sources">
+      <UniqueIdentifier>{a0718033-457e-4eef-8fa2-0c563a4d5328}</UniqueIdentifier>
+      <Extensions>c;cpp;ic;icc;h</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Inventor/Qt sources">
+      <UniqueIdentifier>{77f26c26-4ef5-4f4c-9fa9-aabf0b18f5cf}</UniqueIdentifier>
+      <Extensions>c;cpp;ic;icc;h</Extensions>
+    </Filter>
+    <Filter Include="Public Headers">
+      <UniqueIdentifier>{14cd8c6d-710b-4f7b-8a48-92e5f6a84fa9}</UniqueIdentifier>
+      <Extensions>h;ic;icc</Extensions>
+    </Filter>
+    <Filter Include="Public Headers\Inventor%255cQt%255cdevices headers">
+      <UniqueIdentifier>{70f2efbe-4da5-4060-a459-15640efdfa93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Public Headers\Inventor%255cQt%255ceditors headers">
+      <UniqueIdentifier>{e5936327-13eb-47e7-adb9-7ba60f1c2c9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Public Headers\Inventor%255cQt%255cnodes headers">
+      <UniqueIdentifier>{623567fb-0657-4c30-acbf-1196171fe1b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Public Headers\Inventor%255cQt%255cviewers headers">
+      <UniqueIdentifier>{c0a2f3f8-2156-4c9d-881b-69f4f24d5097}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Public Headers\Inventor%255cQt%255cwidgets headers">
+      <UniqueIdentifier>{83e8b605-0846-43ad-8dc8-22371615fdc9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Public Headers\Inventor%255cQt headers">
+      <UniqueIdentifier>{4cd212df-6dd0-49a0-9555-87a98be51c30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Private Headers">
+      <UniqueIdentifier>{abe060ab-8c8d-487b-a7c3-685b8486d6e1}</UniqueIdentifier>
+      <Extensions>h;ic;icc</Extensions>
+    </Filter>
+    <Filter Include="Private Headers\Qt local includes">
+      <UniqueIdentifier>{cf1c050c-f141-45c4-aa6a-0e14cfe8e668}</UniqueIdentifier>
+      <Extensions>h;ic;icc</Extensions>
+    </Filter>
+    <Filter Include="Private Headers\devices local includes">
+      <UniqueIdentifier>{42dc98b9-0b4b-46a4-b663-b829ce6c5cf3}</UniqueIdentifier>
+      <Extensions>h;ic;icc</Extensions>
+    </Filter>
+    <Filter Include="Private Headers\engines local includes">
+      <UniqueIdentifier>{cfe6e1ab-6358-4fae-b2d4-14c0efac7aad}</UniqueIdentifier>
+      <Extensions>h;ic;icc</Extensions>
+    </Filter>
+    <Filter Include="Private Headers\nodes local includes">
+      <UniqueIdentifier>{a7d63073-535e-4dd2-8fe3-fea0a994fc4c}</UniqueIdentifier>
+      <Extensions>h;ic;icc</Extensions>
+    </Filter>
+    <Filter Include="Private Headers\viewers local includes">
+      <UniqueIdentifier>{68b820fd-1ce2-4443-8863-8d90ffbeb4f7}</UniqueIdentifier>
+      <Extensions>h;ic;icc</Extensions>
+    </Filter>
+    <Filter Include="Private Headers\widgets local includes">
+      <UniqueIdentifier>{9a699de4-8c4c-4a9a-9906-bb9d7349c389}</UniqueIdentifier>
+      <Extensions>h;ic;icc</Extensions>
+    </Filter>
+    <Filter Include="Private Headers\src local includes">
+      <UniqueIdentifier>{0bcf658a-c71c-4e26-9a2b-21c0ba1f86ca}</UniqueIdentifier>
+      <Extensions>h;ic;icc</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\ChangeLog">
+      <Filter>Documents</Filter>
+    </None>
+    <None Include="..\..\COPYING">
+      <Filter>Documents</Filter>
+    </None>
+    <None Include="..\..\NEWS">
+      <Filter>Documents</Filter>
+    </None>
+    <None Include="..\..\README">
+      <Filter>Documents</Filter>
+    </None>
+    <None Include="..\..\README.WIN32">
+      <Filter>Documents</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\Inventor\Qt\devices\6DOFEvents.cpp">
+      <Filter>Source Files\Qt/devices sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Inventor\Qt\devices\SoQtDevice.cpp">
+      <Filter>Source Files\Qt/devices sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Inventor\Qt\devices\SoQtDeviceCommon.cpp">
+      <Filter>Source Files\Qt/devices sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Inventor\Qt\devices\SoQtInputFocus.cpp">
+      <Filter>Source Files\Qt/devices sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Inventor\Qt\devices\SoQtInputFocusCommon.cpp">
+      <Filter>Source Files\Qt/devices sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Inventor\Qt\devices\SoQtKeyboard.cpp">
+      <Filter>Source Files\Qt/devices sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Inventor\Qt\devices\SoQtKeyboardCommon.cpp">
+      <Filter>Source Files\Qt/devices sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Inventor\Qt\devices\SoQtMouse.cpp">
+      <Filter>Source Files\Qt/devices sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Inventor\Qt\devices\SoQtMouseCommon.cpp">
+      <Filter>Source Files\Qt/devices sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Inventor\Qt\devices\spwinput_win32.c">
+      <Filter>Source Files\Qt/devices sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Inventor\Qt\devices\spwinput_x11.cpp">
+      <Filter>Source Files\Qt/devices sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Inventor\Qt\editors\SoQtColorEditor.cpp">
+      <Filter>Source Files\Qt/editors sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Inventor\Qt\editors\SoQtMaterialEditor.cpp">
+      <Filter>Source Files\Qt/editors sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Inventor\Qt\engines\Engines.cpp">
+      <Filter>Source Files\Qt/engines sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Inventor\Qt\engines\Format.cpp">
+      <Filter>Source Files\Qt/engines sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Inventor\Qt\engines\RadioGroup.cpp">
+      <Filter>Source Files\Qt/engines sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Inventor\Qt\nodes\ClickCounter.cpp">
+      <Filter>Source Files\Qt/nodes sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Inventor\Qt\nodes\ColorEditor.cpp">
+      <Filter>Source Files\Qt/nodes sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Inventor\Qt\nodes\Frame.cpp">
+      <Filter>Source Files\Qt/nodes sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Inventor\Qt\nodes\Image.cpp">
+      <Filter>Source Files\Qt/nodes sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Inventor\Qt\nodes\Label.cpp">
+      <Filter>Source Files\Qt/nodes sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Inventor\Qt\nodes\MaterialEditor.cpp">
+      <Filter>Source Files\Qt/nodes sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Inventor\Qt\nodes\Nodes.cpp">
+      <Filter>Source Files\Qt/nodes sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Inventor\Qt\nodes\Pane.cpp">
+      <Filter>Source Files\Qt/nodes sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Inventor\Qt\nodes\Position.cpp">
+      <Filter>Source Files\Qt/nodes sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Inventor\Qt\nodes\RadioButton.cpp">
+      <Filter>Source Files\Qt/nodes sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Inventor\Qt\nodes\SceneTexture2.cpp">
+      <Filter>Source Files\Qt/nodes sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Inventor\Qt\nodes\Slider1.cpp">
+      <Filter>Source Files\Qt/nodes sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Inventor\Qt\nodes\Slider2.cpp">
+      <Filter>Source Files\Qt/nodes sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Inventor\Qt\nodes\ToggleButton.cpp">
+      <Filter>Source Files\Qt/nodes sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Inventor\Qt\nodes\Translation.cpp">
+      <Filter>Source Files\Qt/nodes sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Inventor\Qt\nodes\ViewpointWrapper.cpp">
+      <Filter>Source Files\Qt/nodes sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Inventor\Qt\nodes\ViewportFix.cpp">
+      <Filter>Source Files\Qt/nodes sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Inventor\Qt\viewers\ExaminerViewer.cpp">
+      <Filter>Source Files\Qt/viewers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Inventor\Qt\viewers\FullViewer.cpp">
+      <Filter>Source Files\Qt/viewers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Inventor\Qt\viewers\PlaneViewer.cpp">
+      <Filter>Source Files\Qt/viewers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Inventor\Qt\viewers\SoQtConstrainedViewer.cpp">
+      <Filter>Source Files\Qt/viewers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Inventor\Qt\viewers\SoQtExaminerViewer.cpp">
+      <Filter>Source Files\Qt/viewers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Inventor\Qt\viewers\SoQtFlyViewer.cpp">
+      <Filter>Source Files\Qt/viewers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Inventor\Qt\viewers\SoQtFullViewer.cpp">
+      <Filter>Source Files\Qt/viewers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Inventor\Qt\viewers\SoQtPlaneViewer.cpp">
+      <Filter>Source Files\Qt/viewers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Inventor\Qt\viewers\SoQtViewer.cpp">
+      <Filter>Source Files\Qt/viewers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Inventor\Qt\widgets\QtNativePopupMenu.cpp">
+      <Filter>Source Files\Qt/widgets sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Inventor\Qt\widgets\SoAnyThumbWheel.cpp">
+      <Filter>Source Files\Qt/widgets sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Inventor\Qt\widgets\SoQtGLArea.cpp">
+      <Filter>Source Files\Qt/widgets sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Inventor\Qt\widgets\SoQtPopupMenu.cpp">
+      <Filter>Source Files\Qt/widgets sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Inventor\Qt\widgets\SoQtThumbWheel.cpp">
+      <Filter>Source Files\Qt/widgets sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Inventor\Qt\SoAny.cpp">
+      <Filter>Source Files\Inventor/Qt sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Inventor\Qt\SoQt.cpp">
+      <Filter>Source Files\Inventor/Qt sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Inventor\Qt\SoQtCommon.cpp">
+      <Filter>Source Files\Inventor/Qt sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Inventor\Qt\SoQtComponent.cpp">
+      <Filter>Source Files\Inventor/Qt sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Inventor\Qt\SoQtComponentCommon.cpp">
+      <Filter>Source Files\Inventor/Qt sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Inventor\Qt\SoQtCursor.cpp">
+      <Filter>Source Files\Inventor/Qt sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Inventor\Qt\SoQtGLWidget.cpp">
+      <Filter>Source Files\Inventor/Qt sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Inventor\Qt\SoQtGLWidgetCommon.cpp">
+      <Filter>Source Files\Inventor/Qt sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Inventor\Qt\SoQtImageReader.cpp">
+      <Filter>Source Files\Inventor/Qt sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Inventor\Qt\SoQtObject.cpp">
+      <Filter>Source Files\Inventor/Qt sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Inventor\Qt\SoQtRenderArea.cpp">
+      <Filter>Source Files\Inventor/Qt sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Inventor\Qt\SoQtSignalThread.cpp">
+      <Filter>Source Files\Inventor/Qt sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Inventor\Qt\devices\SoQtDevice.h">
+      <Filter>Public Headers\Inventor%255cQt%255cdevices headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Inventor\Qt\devices\SoQtKeyboard.h">
+      <Filter>Public Headers\Inventor%255cQt%255cdevices headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Inventor\Qt\devices\SoQtMouse.h">
+      <Filter>Public Headers\Inventor%255cQt%255cdevices headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Inventor\Qt\editors\SoQtColorEditor.h">
+      <Filter>Public Headers\Inventor%255cQt%255ceditors headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Inventor\Qt\editors\SoQtMaterialEditor.h">
+      <Filter>Public Headers\Inventor%255cQt%255ceditors headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Inventor\Qt\nodes\SoGuiColorEditor.h">
+      <Filter>Public Headers\Inventor%255cQt%255cnodes headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Inventor\Qt\nodes\SoGuiMaterialEditor.h">
+      <Filter>Public Headers\Inventor%255cQt%255cnodes headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Inventor\Qt\viewers\SoQtConstrainedViewer.h">
+      <Filter>Public Headers\Inventor%255cQt%255cviewers headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Inventor\Qt\viewers\SoQtExaminerViewer.h">
+      <Filter>Public Headers\Inventor%255cQt%255cviewers headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Inventor\Qt\viewers\SoQtFlyViewer.h">
+      <Filter>Public Headers\Inventor%255cQt%255cviewers headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Inventor\Qt\viewers\SoQtFullViewer.h">
+      <Filter>Public Headers\Inventor%255cQt%255cviewers headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Inventor\Qt\viewers\SoQtPlaneViewer.h">
+      <Filter>Public Headers\Inventor%255cQt%255cviewers headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Inventor\Qt\viewers\SoQtViewer.h">
+      <Filter>Public Headers\Inventor%255cQt%255cviewers headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Inventor\Qt\widgets\SoQtPopupMenu.h">
+      <Filter>Public Headers\Inventor%255cQt%255cwidgets headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Inventor\Qt\SoQt.h">
+      <Filter>Public Headers\Inventor%255cQt headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Inventor\Qt\SoQtBasic.h">
+      <Filter>Public Headers\Inventor%255cQt headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Inventor\Qt\SoQtColorEditor.h">
+      <Filter>Public Headers\Inventor%255cQt headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Inventor\Qt\SoQtComponent.h">
+      <Filter>Public Headers\Inventor%255cQt headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Inventor\Qt\SoQtCursor.h">
+      <Filter>Public Headers\Inventor%255cQt headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Inventor\Qt\SoQtGLWidget.h">
+      <Filter>Public Headers\Inventor%255cQt headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Inventor\Qt\SoQtObject.h">
+      <Filter>Public Headers\Inventor%255cQt headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Inventor\Qt\SoQtRenderArea.h">
+      <Filter>Public Headers\Inventor%255cQt headers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\nodes\ClickCounter.cpp.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\nodes\ClickCounter.h.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\nodes\ColorEditor.cpp.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\nodes\ColorEditor.h.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\engines\Engines.cpp.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\engines\Engines.h.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\engines\Format.cpp.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\engines\Format.h.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\nodes\Frame.cpp.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\nodes\Frame.h.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\gl.h.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\nodes\Image.cpp.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\nodes\Image.h.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\nodes\Label.cpp.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\nodes\Label.h.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\nodes\MaterialEditor.cpp.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\nodes\MaterialEditor.h.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\nodes\Nodes.cpp.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\nodes\Nodes.h.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\nodes\Pane.cpp.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\nodes\Pane.h.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\nodes\Position.cpp.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\nodes\Position.h.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\nodes\RadioButton.cpp.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\nodes\RadioButton.h.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\engines\RadioGroup.cpp.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\engines\RadioGroup.h.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\nodes\SceneTexture2.cpp.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\nodes\SceneTexture2.h.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\nodes\Slider1.cpp.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\nodes\Slider1.h.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\nodes\Slider2.cpp.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\nodes\Slider2.h.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\SoAny.cpp.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\SoAny.h.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\widgets\SoAnyThumbWheel.cpp.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\widgets\SoAnyThumbWheel.h.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\SoGui.h.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\editors\SoGuiColorEditor.cpp.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\editors\SoGuiColorEditor.h.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\SoGuiCommon.cpp.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\SoGuiComponent.h.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\SoGuiComponentCommon.cpp.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\SoGuiComponentP.h.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\viewers\SoGuiConstrainedViewer.cpp.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\viewers\SoGuiConstrainedViewer.h.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\SoGuiCursor.cpp.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\SoGuiCursor.h.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\devices\SoGuiDevice.cpp.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\devices\SoGuiDevice.h.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\devices\SoGuiDeviceP.h.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\viewers\SoGuiExaminerViewer.cpp.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\viewers\SoGuiExaminerViewer.h.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\viewers\SoGuiExaminerViewerP.h.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\viewers\SoGuiFlyViewer.cpp.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\viewers\SoGuiFlyViewer.h.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\viewers\SoGuiFullViewer.cpp.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\viewers\SoGuiFullViewer.h.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\viewers\SoGuiFullViewerP.h.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\SoGuiGLWidget.h.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\SoGuiGLWidgetCommon.cpp.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\SoGuiGLWidgetP.h.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\devices\SoGuiInputFocus.cpp.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\devices\SoGuiInputFocus.h.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\devices\SoGuiInputFocusP.h.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\devices\SoGuiKeyboard.cpp.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\devices\SoGuiKeyboard.h.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\devices\SoGuiKeyboardP.h.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\editors\SoGuiMaterialEditor.cpp.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\editors\SoGuiMaterialEditor.h.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\devices\SoGuiMouse.cpp.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\devices\SoGuiMouse.h.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\devices\SoGuiMouseP.h.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\SoGuiObject.cpp.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\SoGuiObject.h.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\SoGuiP.h.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\viewers\SoGuiPlaneViewer.cpp.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\viewers\SoGuiPlaneViewer.h.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\viewers\SoGuiPlaneViewerP.h.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\widgets\SoGuiPopupMenu.cpp.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\widgets\SoGuiPopupMenu.h.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\SoGuiRenderArea.cpp.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\SoGuiRenderArea.h.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\viewers\SoGuiViewer.cpp.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\viewers\SoGuiViewer.h.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\viewers\SoGuiViewerP.h.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\spwinput.h.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\spwinput_win32.c.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\spwinput_win32.h.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\spwinput_x11.cpp.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\nodes\ToggleButton.cpp.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\nodes\ToggleButton.h.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\nodes\Translation.cpp.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\nodes\Translation.h.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\nodes\ViewpointWrapper.cpp.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\nodes\ViewpointWrapper.h.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\nodes\ViewportFix.cpp.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\common\nodes\ViewportFix.h.in">
+      <Filter>Template Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\viewers\SoQtExaminerViewerP.h">
+      <Filter>Source Files\Qt/viewers sources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\viewers\SoQtFullViewerP.h">
+      <Filter>Source Files\Qt/viewers sources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\viewers\SoQtPlaneViewerP.h">
+      <Filter>Source Files\Qt/viewers sources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\widgets\QtNativePopupMenu.h">
+      <Filter>Source Files\Qt/widgets sources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\widgets\SoQtGLArea.h">
+      <Filter>Source Files\Qt/widgets sources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\widgets\SoQtThumbWheel.h">
+      <Filter>Source Files\Qt/widgets sources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\SoQtComponentP.h">
+      <Filter>Source Files\Inventor/Qt sources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\SoQtGLWidgetP.h">
+      <Filter>Source Files\Inventor/Qt sources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\SoQtP.h">
+      <Filter>Source Files\Inventor/Qt sources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\SoQtSignalThread.h">
+      <Filter>Source Files\Inventor/Qt sources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\Inventor\Qt\moc_SoQtComponentP.icc">
+      <Filter>Private Headers\Qt local includes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\Inventor\Qt\moc_SoQtGLWidgetP.icc">
+      <Filter>Private Headers\Qt local includes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\Inventor\Qt\moc_SoQtP.icc">
+      <Filter>Private Headers\Qt local includes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\Inventor\Qt\moc_SoQtSignalThread.icc">
+      <Filter>Private Headers\Qt local includes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\Inventor\Qt\SoGuiComponentP.h">
+      <Filter>Private Headers\Qt local includes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\Inventor\Qt\SoGuiGLWidgetP.h">
+      <Filter>Private Headers\Qt local includes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\Inventor\Qt\SoGuiP.h">
+      <Filter>Private Headers\Qt local includes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\Inventor\Qt\devices\SoGuiDeviceP.h">
+      <Filter>Private Headers\devices local includes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\Inventor\Qt\devices\SoGuiInputFocusP.h">
+      <Filter>Private Headers\devices local includes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\Inventor\Qt\devices\SoGuiKeyboardP.h">
+      <Filter>Private Headers\devices local includes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\Inventor\Qt\devices\SoGuiMouseP.h">
+      <Filter>Private Headers\devices local includes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\devices\SoQtDeviceP.h">
+      <Filter>Private Headers\devices local includes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\Inventor\Qt\devices\SoQtLinuxJoystickP.h">
+      <Filter>Private Headers\devices local includes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\Inventor\Qt\engines\SoGuiEngines.h">
+      <Filter>Private Headers\engines local includes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\Inventor\Qt\engines\SoGuiFormat.h">
+      <Filter>Private Headers\engines local includes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\Inventor\Qt\engines\SoGuiRadioGroup.h">
+      <Filter>Private Headers\engines local includes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\Inventor\Qt\nodes\SoGuiClickCounter.h">
+      <Filter>Private Headers\nodes local includes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\Inventor\Qt\nodes\SoGuiFrame.h">
+      <Filter>Private Headers\nodes local includes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\Inventor\Qt\nodes\SoGuiImage.h">
+      <Filter>Private Headers\nodes local includes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\Inventor\Qt\nodes\SoGuiLabel.h">
+      <Filter>Private Headers\nodes local includes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\Inventor\Qt\nodes\SoGuiNodes.h">
+      <Filter>Private Headers\nodes local includes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\Inventor\Qt\nodes\SoGuiPane.h">
+      <Filter>Private Headers\nodes local includes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\Inventor\Qt\nodes\SoGuiPosition.h">
+      <Filter>Private Headers\nodes local includes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\Inventor\Qt\nodes\SoGuiRadioButton.h">
+      <Filter>Private Headers\nodes local includes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\Inventor\Qt\nodes\SoGuiSceneTexture2.h">
+      <Filter>Private Headers\nodes local includes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\Inventor\Qt\nodes\SoGuiSlider1.h">
+      <Filter>Private Headers\nodes local includes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\Inventor\Qt\nodes\SoGuiSlider2.h">
+      <Filter>Private Headers\nodes local includes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\Inventor\Qt\nodes\SoGuiToggleButton.h">
+      <Filter>Private Headers\nodes local includes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\Inventor\Qt\nodes\SoGuiTranslation.h">
+      <Filter>Private Headers\nodes local includes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\Inventor\Qt\nodes\SoGuiViewpointWrapper.h">
+      <Filter>Private Headers\nodes local includes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\Inventor\Qt\nodes\SoGuiViewportFix.h">
+      <Filter>Private Headers\nodes local includes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\Inventor\Qt\viewers\moc_SoQtExaminerViewerP.icc">
+      <Filter>Private Headers\viewers local includes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\Inventor\Qt\viewers\moc_SoQtFullViewerP.icc">
+      <Filter>Private Headers\viewers local includes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\Inventor\Qt\viewers\moc_SoQtPlaneViewerP.icc">
+      <Filter>Private Headers\viewers local includes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\Inventor\Qt\viewers\SoGuiExaminerViewerP.h">
+      <Filter>Private Headers\viewers local includes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\Inventor\Qt\viewers\SoGuiFullViewerP.h">
+      <Filter>Private Headers\viewers local includes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\Inventor\Qt\viewers\SoGuiPlaneViewerP.h">
+      <Filter>Private Headers\viewers local includes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\Inventor\Qt\viewers\SoGuiViewerP.h">
+      <Filter>Private Headers\viewers local includes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\Inventor\Qt\widgets\moc_QtNativePopupMenu.icc">
+      <Filter>Private Headers\widgets local includes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\Inventor\Qt\widgets\moc_SoQtGLArea.icc">
+      <Filter>Private Headers\widgets local includes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\Inventor\Qt\widgets\moc_SoQtThumbWheel.icc">
+      <Filter>Private Headers\widgets local includes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\config-debug.h">
+      <Filter>Private Headers\src local includes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\config-release.h">
+      <Filter>Private Headers\src local includes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\qt-config.h">
+      <Filter>Private Headers\src local includes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\soqtdefs.h">
+      <Filter>Private Headers\src local includes</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="Windows-1252"?>
 <VisualStudioProject
 	ProjectType="Visual C++"
-	Version="8,00"
+	Version="8.00"
 	Name="soqt1"
 	>
 	<Platforms>
@@ -72,7 +72,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="$(QTDIR)\lib\QtOpenGL4.lib $(QTDIR)\lib\QtGui4.lib $(QTDIR)\lib\QtCore4.lib $(COINDIR)\lib\coin3d.lib opengl32.lib"
+				AdditionalDependencies="$(QTDIR)\lib\QtOpenGL4.lib $(QTDIR)\lib\QtGui4.lib $(QTDIR)\lib\QtCore4.lib $(COINDIR)\lib\coin3.lib opengl32.lib"
 				OutputFile="soqt1.dll"
 				LinkIncremental="1"
 				SuppressStartupBanner="true"
@@ -355,11 +355,11 @@
 			Filter=";txt"
 			>
 			<File
-				RelativePath="..\..\ChangeLog"
+				RelativePath="..\..\COPYING"
 				>
 			</File>
 			<File
-				RelativePath="..\..\COPYING"
+				RelativePath="..\..\LICENSE.GPL"
 				>
 			</File>
 			<File
