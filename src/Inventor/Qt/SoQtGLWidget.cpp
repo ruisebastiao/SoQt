@@ -72,7 +72,10 @@
 #include <qx11info_x11.h> // for QX11Info
 #endif // Q_WS_X11
 
-#if QT_VERSION >= 0x040000 // Qt 4.0.0+
+
+#if QT_VERSION >= 0x050000 // Qt 5.0.0+
+#include <QtWidgets/QColormap> // for QX11Info
+#elif QT_VERSION >= 0x040000 // Qt 4.0.0+
 #include <QtGui/QColormap> // for QX11Info
 #endif // Qt 4.0.0+
 
@@ -868,7 +871,7 @@ SoQtGLWidgetP::eventFilter(QObject * obj, QEvent * e)
 {
   if (SOQT_DEBUG && 0) { // debug
 #if QT_VERSION >= 0x040000
-    SbString w = obj->objectName().toAscii().constData();
+    SbString w = obj->objectName().toLatin1().constData();
 #else
     SbString w = obj->name();
 #endif

@@ -69,6 +69,7 @@
     <OutDir>.\Release\</OutDir>
     <IntDir>.\Release\</IntDir>
     <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(QTDIR)\include\QtGui;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtOpenGL;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='LIB (Release)|Win32'">
     <OutDir>.\StaticRelease\</OutDir>
@@ -77,11 +78,13 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='LIB (Debug)|Win32'">
     <OutDir>.\StaticDebug\</OutDir>
     <IntDir>.\StaticDebug\</IntDir>
+    <IncludePath>$(QTDIR)\include\QtCore;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtOpenGL;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DLL (Debug)|Win32'">
     <OutDir>.\Debug\</OutDir>
     <IntDir>.\Debug\</IntDir>
     <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(IncludePath);$(QTDIR)\include\QtGui;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtOpenGL</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DLL (Release)|Win32'">
     <Midl>
@@ -113,7 +116,7 @@
       <Culture>0x0409</Culture>
     </ResourceCompile>
     <Link>
-      <AdditionalDependencies>$(QTDIR)\lib\QtOpenGL4.lib;$(QTDIR)\lib\QtGui4.lib;$(QTDIR)\lib\QtCore4.lib;$(COINDIR)\lib\coin3d.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>$(QTDIR)\lib\Qt5OpenGL.lib;$(QTDIR)\lib\Qt5Widgets.lib;$(QTDIR)\lib\Qt5Gui.lib;$(QTDIR)\lib\Qt5Core.lib;$(COINDIR)\lib\coin3d.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>soqt1.dll</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <ProgramDatabaseFile>.\Release/soqt1.pdb</ProgramDatabaseFile>
@@ -198,13 +201,14 @@
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <CompileAs>Default</CompileAs>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <Culture>0x0409</Culture>
     </ResourceCompile>
     <Link>
-      <AdditionalDependencies>$(QTDIR)\lib\QtOpenGLd4.lib;$(QTDIR)\lib\QtGuid4.lib;$(QTDIR)\lib\QtCored4.lib;$(COINDIR)\lib\coin3d.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>$(QTDIR)\lib\Qt5OpenGLd.lib;$(QTDIR)\lib\Qt5Widgetsd.lib;$(QTDIR)\lib\Qt5Guid.lib;$(QTDIR)\lib\Qt5Cored.lib;$(COINDIR)\lib\coin3d.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>soqt1d.dll</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -3126,208 +3130,208 @@
     <CustomBuild Include="..\..\src\Inventor\Qt\SoQtComponentP.h">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DLL (Debug)|Win32'">true</ExcludedFromBuild>
       <Message Condition="'$(Configuration)|$(Platform)'=='DLL (Debug)|Win32'">moc%27ing %(FullPath)</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='DLL (Debug)|Win32'">"$(QTDIR)"\bin\moc -o src\Inventor\Qt\moc_SoQtComponentP.icc ..\..\src\Inventor\Qt\SoQtComponentP.h
+      <Command Condition="'$(Configuration)|$(Platform)'=='DLL (Debug)|Win32'">$(QTDIR)\bin\moc -o src\Inventor\Qt\moc_SoQtComponentP.icc ..\..\src\Inventor\Qt\SoQtComponentP.h
 </Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='DLL (Debug)|Win32'">src\Inventor\Qt\moc_SoQtComponentP.icc;%(Outputs)</Outputs>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DLL (Release)|Win32'">true</ExcludedFromBuild>
       <Message Condition="'$(Configuration)|$(Platform)'=='DLL (Release)|Win32'">moc%27ing %(FullPath)</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='DLL (Release)|Win32'">"$(QTDIR)"\bin\moc -o src\Inventor\Qt\moc_SoQtComponentP.icc ..\..\src\Inventor\Qt\SoQtComponentP.h
+      <Command Condition="'$(Configuration)|$(Platform)'=='DLL (Release)|Win32'">$(QTDIR)\bin\moc -o src\Inventor\Qt\moc_SoQtComponentP.icc ..\..\src\Inventor\Qt\SoQtComponentP.h
 </Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='DLL (Release)|Win32'">src\Inventor\Qt\moc_SoQtComponentP.icc;%(Outputs)</Outputs>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='LIB (Debug)|Win32'">true</ExcludedFromBuild>
       <Message Condition="'$(Configuration)|$(Platform)'=='LIB (Debug)|Win32'">moc%27ing %(FullPath)</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='LIB (Debug)|Win32'">"$(QTDIR)"\bin\moc -o src\Inventor\Qt\moc_SoQtComponentP.icc ..\..\src\Inventor\Qt\SoQtComponentP.h
+      <Command Condition="'$(Configuration)|$(Platform)'=='LIB (Debug)|Win32'">$(QTDIR)\bin\moc -o src\Inventor\Qt\moc_SoQtComponentP.icc ..\..\src\Inventor\Qt\SoQtComponentP.h
 </Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='LIB (Debug)|Win32'">src\Inventor\Qt\moc_SoQtComponentP.icc;%(Outputs)</Outputs>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='LIB (Release)|Win32'">true</ExcludedFromBuild>
       <Message Condition="'$(Configuration)|$(Platform)'=='LIB (Release)|Win32'">moc%27ing %(FullPath)</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='LIB (Release)|Win32'">"$(QTDIR)"\bin\moc -o src\Inventor\Qt\moc_SoQtComponentP.icc ..\..\src\Inventor\Qt\SoQtComponentP.h
+      <Command Condition="'$(Configuration)|$(Platform)'=='LIB (Release)|Win32'">$(QTDIR)\bin\moc -o src\Inventor\Qt\moc_SoQtComponentP.icc ..\..\src\Inventor\Qt\SoQtComponentP.h
 </Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='LIB (Release)|Win32'">src\Inventor\Qt\moc_SoQtComponentP.icc;%(Outputs)</Outputs>
     </CustomBuild>
     <CustomBuild Include="..\..\src\Inventor\Qt\SoQtGLWidgetP.h">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DLL (Debug)|Win32'">true</ExcludedFromBuild>
       <Message Condition="'$(Configuration)|$(Platform)'=='DLL (Debug)|Win32'">moc%27ing %(FullPath)</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='DLL (Debug)|Win32'">"$(QTDIR)"\bin\moc -o src\Inventor\Qt\moc_SoQtGLWidgetP.icc ..\..\src\Inventor\Qt\SoQtGLWidgetP.h
+      <Command Condition="'$(Configuration)|$(Platform)'=='DLL (Debug)|Win32'">$(QTDIR)\bin\moc -o src\Inventor\Qt\moc_SoQtGLWidgetP.icc ..\..\src\Inventor\Qt\SoQtGLWidgetP.h
 </Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='DLL (Debug)|Win32'">src\Inventor\Qt\moc_SoQtGLWidgetP.icc;%(Outputs)</Outputs>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DLL (Release)|Win32'">true</ExcludedFromBuild>
       <Message Condition="'$(Configuration)|$(Platform)'=='DLL (Release)|Win32'">moc%27ing %(FullPath)</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='DLL (Release)|Win32'">"$(QTDIR)"\bin\moc -o src\Inventor\Qt\moc_SoQtGLWidgetP.icc ..\..\src\Inventor\Qt\SoQtGLWidgetP.h
+      <Command Condition="'$(Configuration)|$(Platform)'=='DLL (Release)|Win32'">$(QTDIR)\bin\moc -o src\Inventor\Qt\moc_SoQtGLWidgetP.icc ..\..\src\Inventor\Qt\SoQtGLWidgetP.h
 </Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='DLL (Release)|Win32'">src\Inventor\Qt\moc_SoQtGLWidgetP.icc;%(Outputs)</Outputs>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='LIB (Debug)|Win32'">true</ExcludedFromBuild>
       <Message Condition="'$(Configuration)|$(Platform)'=='LIB (Debug)|Win32'">moc%27ing %(FullPath)</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='LIB (Debug)|Win32'">"$(QTDIR)"\bin\moc -o src\Inventor\Qt\moc_SoQtGLWidgetP.icc ..\..\src\Inventor\Qt\SoQtGLWidgetP.h
+      <Command Condition="'$(Configuration)|$(Platform)'=='LIB (Debug)|Win32'">$(QTDIR)\bin\moc -o src\Inventor\Qt\moc_SoQtGLWidgetP.icc ..\..\src\Inventor\Qt\SoQtGLWidgetP.h
 </Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='LIB (Debug)|Win32'">src\Inventor\Qt\moc_SoQtGLWidgetP.icc;%(Outputs)</Outputs>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='LIB (Release)|Win32'">true</ExcludedFromBuild>
       <Message Condition="'$(Configuration)|$(Platform)'=='LIB (Release)|Win32'">moc%27ing %(FullPath)</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='LIB (Release)|Win32'">"$(QTDIR)"\bin\moc -o src\Inventor\Qt\moc_SoQtGLWidgetP.icc ..\..\src\Inventor\Qt\SoQtGLWidgetP.h
+      <Command Condition="'$(Configuration)|$(Platform)'=='LIB (Release)|Win32'">$(QTDIR)\bin\moc -o src\Inventor\Qt\moc_SoQtGLWidgetP.icc ..\..\src\Inventor\Qt\SoQtGLWidgetP.h
 </Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='LIB (Release)|Win32'">src\Inventor\Qt\moc_SoQtGLWidgetP.icc;%(Outputs)</Outputs>
     </CustomBuild>
     <CustomBuild Include="..\..\src\Inventor\Qt\SoQtP.h">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DLL (Debug)|Win32'">true</ExcludedFromBuild>
       <Message Condition="'$(Configuration)|$(Platform)'=='DLL (Debug)|Win32'">moc%27ing %(FullPath)</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='DLL (Debug)|Win32'">"$(QTDIR)"\bin\moc -o src\Inventor\Qt\moc_SoQtP.icc ..\..\src\Inventor\Qt\SoQtP.h
+      <Command Condition="'$(Configuration)|$(Platform)'=='DLL (Debug)|Win32'">$(QTDIR)\bin\moc -o src\Inventor\Qt\moc_SoQtP.icc ..\..\src\Inventor\Qt\SoQtP.h
 </Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='DLL (Debug)|Win32'">src\Inventor\Qt\moc_SoQtP.icc;%(Outputs)</Outputs>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DLL (Release)|Win32'">true</ExcludedFromBuild>
       <Message Condition="'$(Configuration)|$(Platform)'=='DLL (Release)|Win32'">moc%27ing %(FullPath)</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='DLL (Release)|Win32'">"$(QTDIR)"\bin\moc -o src\Inventor\Qt\moc_SoQtP.icc ..\..\src\Inventor\Qt\SoQtP.h
+      <Command Condition="'$(Configuration)|$(Platform)'=='DLL (Release)|Win32'">$(QTDIR)\bin\moc -o src\Inventor\Qt\moc_SoQtP.icc ..\..\src\Inventor\Qt\SoQtP.h
 </Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='DLL (Release)|Win32'">src\Inventor\Qt\moc_SoQtP.icc;%(Outputs)</Outputs>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='LIB (Debug)|Win32'">true</ExcludedFromBuild>
       <Message Condition="'$(Configuration)|$(Platform)'=='LIB (Debug)|Win32'">moc%27ing %(FullPath)</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='LIB (Debug)|Win32'">"$(QTDIR)"\bin\moc -o src\Inventor\Qt\moc_SoQtP.icc ..\..\src\Inventor\Qt\SoQtP.h
+      <Command Condition="'$(Configuration)|$(Platform)'=='LIB (Debug)|Win32'">$(QTDIR)\bin\moc -o src\Inventor\Qt\moc_SoQtP.icc ..\..\src\Inventor\Qt\SoQtP.h
 </Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='LIB (Debug)|Win32'">src\Inventor\Qt\moc_SoQtP.icc;%(Outputs)</Outputs>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='LIB (Release)|Win32'">true</ExcludedFromBuild>
       <Message Condition="'$(Configuration)|$(Platform)'=='LIB (Release)|Win32'">moc%27ing %(FullPath)</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='LIB (Release)|Win32'">"$(QTDIR)"\bin\moc -o src\Inventor\Qt\moc_SoQtP.icc ..\..\src\Inventor\Qt\SoQtP.h
+      <Command Condition="'$(Configuration)|$(Platform)'=='LIB (Release)|Win32'">$(QTDIR)\bin\moc -o src\Inventor\Qt\moc_SoQtP.icc ..\..\src\Inventor\Qt\SoQtP.h
 </Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='LIB (Release)|Win32'">src\Inventor\Qt\moc_SoQtP.icc;%(Outputs)</Outputs>
     </CustomBuild>
     <CustomBuild Include="..\..\src\Inventor\Qt\SoQtSignalThread.h">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DLL (Debug)|Win32'">true</ExcludedFromBuild>
       <Message Condition="'$(Configuration)|$(Platform)'=='DLL (Debug)|Win32'">moc%27ing %(FullPath)</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='DLL (Debug)|Win32'">"$(QTDIR)"\bin\moc -o src\Inventor\Qt\moc_SoQtSignalThread.icc ..\..\src\Inventor\Qt\SoQtSignalThread.h
+      <Command Condition="'$(Configuration)|$(Platform)'=='DLL (Debug)|Win32'">$(QTDIR)\bin\moc -o src\Inventor\Qt\moc_SoQtSignalThread.icc ..\..\src\Inventor\Qt\SoQtSignalThread.h
 </Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='DLL (Debug)|Win32'">src\Inventor\Qt\moc_SoQtSignalThread.icc;%(Outputs)</Outputs>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DLL (Release)|Win32'">true</ExcludedFromBuild>
       <Message Condition="'$(Configuration)|$(Platform)'=='DLL (Release)|Win32'">moc%27ing %(FullPath)</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='DLL (Release)|Win32'">"$(QTDIR)"\bin\moc -o src\Inventor\Qt\moc_SoQtSignalThread.icc ..\..\src\Inventor\Qt\SoQtSignalThread.h
+      <Command Condition="'$(Configuration)|$(Platform)'=='DLL (Release)|Win32'">$(QTDIR)\bin\moc -o src\Inventor\Qt\moc_SoQtSignalThread.icc ..\..\src\Inventor\Qt\SoQtSignalThread.h
 </Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='DLL (Release)|Win32'">src\Inventor\Qt\moc_SoQtSignalThread.icc;%(Outputs)</Outputs>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='LIB (Debug)|Win32'">true</ExcludedFromBuild>
       <Message Condition="'$(Configuration)|$(Platform)'=='LIB (Debug)|Win32'">moc%27ing %(FullPath)</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='LIB (Debug)|Win32'">"$(QTDIR)"\bin\moc -o src\Inventor\Qt\moc_SoQtSignalThread.icc ..\..\src\Inventor\Qt\SoQtSignalThread.h
+      <Command Condition="'$(Configuration)|$(Platform)'=='LIB (Debug)|Win32'">$(QTDIR)\bin\moc -o src\Inventor\Qt\moc_SoQtSignalThread.icc ..\..\src\Inventor\Qt\SoQtSignalThread.h
 </Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='LIB (Debug)|Win32'">src\Inventor\Qt\moc_SoQtSignalThread.icc;%(Outputs)</Outputs>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='LIB (Release)|Win32'">true</ExcludedFromBuild>
       <Message Condition="'$(Configuration)|$(Platform)'=='LIB (Release)|Win32'">moc%27ing %(FullPath)</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='LIB (Release)|Win32'">"$(QTDIR)"\bin\moc -o src\Inventor\Qt\moc_SoQtSignalThread.icc ..\..\src\Inventor\Qt\SoQtSignalThread.h
+      <Command Condition="'$(Configuration)|$(Platform)'=='LIB (Release)|Win32'">$(QTDIR)\bin\moc -o src\Inventor\Qt\moc_SoQtSignalThread.icc ..\..\src\Inventor\Qt\SoQtSignalThread.h
 </Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='LIB (Release)|Win32'">src\Inventor\Qt\moc_SoQtSignalThread.icc;%(Outputs)</Outputs>
     </CustomBuild>
     <CustomBuild Include="..\..\src\Inventor\Qt\viewers\SoQtExaminerViewerP.h">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DLL (Debug)|Win32'">true</ExcludedFromBuild>
       <Message Condition="'$(Configuration)|$(Platform)'=='DLL (Debug)|Win32'">moc%27ing %(FullPath)</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='DLL (Debug)|Win32'">"$(QTDIR)"\bin\moc -o src\Inventor\Qt\viewers\moc_SoQtExaminerViewerP.icc ..\..\src\Inventor\Qt\viewers\SoQtExaminerViewerP.h
+      <Command Condition="'$(Configuration)|$(Platform)'=='DLL (Debug)|Win32'">$(QTDIR)\bin\moc -o src\Inventor\Qt\viewers\moc_SoQtExaminerViewerP.icc ..\..\src\Inventor\Qt\viewers\SoQtExaminerViewerP.h
 </Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='DLL (Debug)|Win32'">src\Inventor\Qt\viewers\moc_SoQtExaminerViewerP.icc;%(Outputs)</Outputs>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DLL (Release)|Win32'">true</ExcludedFromBuild>
       <Message Condition="'$(Configuration)|$(Platform)'=='DLL (Release)|Win32'">moc%27ing %(FullPath)</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='DLL (Release)|Win32'">"$(QTDIR)"\bin\moc -o src\Inventor\Qt\viewers\moc_SoQtExaminerViewerP.icc ..\..\src\Inventor\Qt\viewers\SoQtExaminerViewerP.h
+      <Command Condition="'$(Configuration)|$(Platform)'=='DLL (Release)|Win32'">$(QTDIR)\bin\moc -o src\Inventor\Qt\viewers\moc_SoQtExaminerViewerP.icc ..\..\src\Inventor\Qt\viewers\SoQtExaminerViewerP.h
 </Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='DLL (Release)|Win32'">src\Inventor\Qt\viewers\moc_SoQtExaminerViewerP.icc;%(Outputs)</Outputs>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='LIB (Debug)|Win32'">true</ExcludedFromBuild>
       <Message Condition="'$(Configuration)|$(Platform)'=='LIB (Debug)|Win32'">moc%27ing %(FullPath)</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='LIB (Debug)|Win32'">"$(QTDIR)"\bin\moc -o src\Inventor\Qt\viewers\moc_SoQtExaminerViewerP.icc ..\..\src\Inventor\Qt\viewers\SoQtExaminerViewerP.h
+      <Command Condition="'$(Configuration)|$(Platform)'=='LIB (Debug)|Win32'">$(QTDIR)\bin\moc -o src\Inventor\Qt\viewers\moc_SoQtExaminerViewerP.icc ..\..\src\Inventor\Qt\viewers\SoQtExaminerViewerP.h
 </Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='LIB (Debug)|Win32'">src\Inventor\Qt\viewers\moc_SoQtExaminerViewerP.icc;%(Outputs)</Outputs>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='LIB (Release)|Win32'">true</ExcludedFromBuild>
       <Message Condition="'$(Configuration)|$(Platform)'=='LIB (Release)|Win32'">moc%27ing %(FullPath)</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='LIB (Release)|Win32'">"$(QTDIR)"\bin\moc -o src\Inventor\Qt\viewers\moc_SoQtExaminerViewerP.icc ..\..\src\Inventor\Qt\viewers\SoQtExaminerViewerP.h
+      <Command Condition="'$(Configuration)|$(Platform)'=='LIB (Release)|Win32'">$(QTDIR)\bin\moc -o src\Inventor\Qt\viewers\moc_SoQtExaminerViewerP.icc ..\..\src\Inventor\Qt\viewers\SoQtExaminerViewerP.h
 </Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='LIB (Release)|Win32'">src\Inventor\Qt\viewers\moc_SoQtExaminerViewerP.icc;%(Outputs)</Outputs>
     </CustomBuild>
     <CustomBuild Include="..\..\src\Inventor\Qt\viewers\SoQtFullViewerP.h">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DLL (Debug)|Win32'">true</ExcludedFromBuild>
       <Message Condition="'$(Configuration)|$(Platform)'=='DLL (Debug)|Win32'">moc%27ing %(FullPath)</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='DLL (Debug)|Win32'">"$(QTDIR)"\bin\moc -o src\Inventor\Qt\viewers\moc_SoQtFullViewerP.icc ..\..\src\Inventor\Qt\viewers\SoQtFullViewerP.h
+      <Command Condition="'$(Configuration)|$(Platform)'=='DLL (Debug)|Win32'">$(QTDIR)\bin\moc -o src\Inventor\Qt\viewers\moc_SoQtFullViewerP.icc ..\..\src\Inventor\Qt\viewers\SoQtFullViewerP.h
 </Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='DLL (Debug)|Win32'">src\Inventor\Qt\viewers\moc_SoQtFullViewerP.icc;%(Outputs)</Outputs>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DLL (Release)|Win32'">true</ExcludedFromBuild>
       <Message Condition="'$(Configuration)|$(Platform)'=='DLL (Release)|Win32'">moc%27ing %(FullPath)</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='DLL (Release)|Win32'">"$(QTDIR)"\bin\moc -o src\Inventor\Qt\viewers\moc_SoQtFullViewerP.icc ..\..\src\Inventor\Qt\viewers\SoQtFullViewerP.h
+      <Command Condition="'$(Configuration)|$(Platform)'=='DLL (Release)|Win32'">$(QTDIR)\bin\moc -o src\Inventor\Qt\viewers\moc_SoQtFullViewerP.icc ..\..\src\Inventor\Qt\viewers\SoQtFullViewerP.h
 </Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='DLL (Release)|Win32'">src\Inventor\Qt\viewers\moc_SoQtFullViewerP.icc;%(Outputs)</Outputs>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='LIB (Debug)|Win32'">true</ExcludedFromBuild>
       <Message Condition="'$(Configuration)|$(Platform)'=='LIB (Debug)|Win32'">moc%27ing %(FullPath)</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='LIB (Debug)|Win32'">"$(QTDIR)"\bin\moc -o src\Inventor\Qt\viewers\moc_SoQtFullViewerP.icc ..\..\src\Inventor\Qt\viewers\SoQtFullViewerP.h
+      <Command Condition="'$(Configuration)|$(Platform)'=='LIB (Debug)|Win32'">$(QTDIR)\bin\moc -o src\Inventor\Qt\viewers\moc_SoQtFullViewerP.icc ..\..\src\Inventor\Qt\viewers\SoQtFullViewerP.h
 </Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='LIB (Debug)|Win32'">src\Inventor\Qt\viewers\moc_SoQtFullViewerP.icc;%(Outputs)</Outputs>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='LIB (Release)|Win32'">true</ExcludedFromBuild>
       <Message Condition="'$(Configuration)|$(Platform)'=='LIB (Release)|Win32'">moc%27ing %(FullPath)</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='LIB (Release)|Win32'">"$(QTDIR)"\bin\moc -o src\Inventor\Qt\viewers\moc_SoQtFullViewerP.icc ..\..\src\Inventor\Qt\viewers\SoQtFullViewerP.h
+      <Command Condition="'$(Configuration)|$(Platform)'=='LIB (Release)|Win32'">$(QTDIR)\bin\moc -o src\Inventor\Qt\viewers\moc_SoQtFullViewerP.icc ..\..\src\Inventor\Qt\viewers\SoQtFullViewerP.h
 </Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='LIB (Release)|Win32'">src\Inventor\Qt\viewers\moc_SoQtFullViewerP.icc;%(Outputs)</Outputs>
     </CustomBuild>
     <CustomBuild Include="..\..\src\Inventor\Qt\viewers\SoQtPlaneViewerP.h">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DLL (Debug)|Win32'">true</ExcludedFromBuild>
       <Message Condition="'$(Configuration)|$(Platform)'=='DLL (Debug)|Win32'">moc%27ing %(FullPath)</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='DLL (Debug)|Win32'">"$(QTDIR)"\bin\moc -o src\Inventor\Qt\viewers\moc_SoQtPlaneViewerP.icc ..\..\src\Inventor\Qt\viewers\SoQtPlaneViewerP.h
+      <Command Condition="'$(Configuration)|$(Platform)'=='DLL (Debug)|Win32'">$(QTDIR)\bin\moc -o src\Inventor\Qt\viewers\moc_SoQtPlaneViewerP.icc ..\..\src\Inventor\Qt\viewers\SoQtPlaneViewerP.h
 </Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='DLL (Debug)|Win32'">src\Inventor\Qt\viewers\moc_SoQtPlaneViewerP.icc;%(Outputs)</Outputs>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DLL (Release)|Win32'">true</ExcludedFromBuild>
       <Message Condition="'$(Configuration)|$(Platform)'=='DLL (Release)|Win32'">moc%27ing %(FullPath)</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='DLL (Release)|Win32'">"$(QTDIR)"\bin\moc -o src\Inventor\Qt\viewers\moc_SoQtPlaneViewerP.icc ..\..\src\Inventor\Qt\viewers\SoQtPlaneViewerP.h
+      <Command Condition="'$(Configuration)|$(Platform)'=='DLL (Release)|Win32'">$(QTDIR)\bin\moc -o src\Inventor\Qt\viewers\moc_SoQtPlaneViewerP.icc ..\..\src\Inventor\Qt\viewers\SoQtPlaneViewerP.h
 </Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='DLL (Release)|Win32'">src\Inventor\Qt\viewers\moc_SoQtPlaneViewerP.icc;%(Outputs)</Outputs>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='LIB (Debug)|Win32'">true</ExcludedFromBuild>
       <Message Condition="'$(Configuration)|$(Platform)'=='LIB (Debug)|Win32'">moc%27ing %(FullPath)</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='LIB (Debug)|Win32'">"$(QTDIR)"\bin\moc -o src\Inventor\Qt\viewers\moc_SoQtPlaneViewerP.icc ..\..\src\Inventor\Qt\viewers\SoQtPlaneViewerP.h
+      <Command Condition="'$(Configuration)|$(Platform)'=='LIB (Debug)|Win32'">$(QTDIR)\bin\moc -o src\Inventor\Qt\viewers\moc_SoQtPlaneViewerP.icc ..\..\src\Inventor\Qt\viewers\SoQtPlaneViewerP.h
 </Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='LIB (Debug)|Win32'">src\Inventor\Qt\viewers\moc_SoQtPlaneViewerP.icc;%(Outputs)</Outputs>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='LIB (Release)|Win32'">true</ExcludedFromBuild>
       <Message Condition="'$(Configuration)|$(Platform)'=='LIB (Release)|Win32'">moc%27ing %(FullPath)</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='LIB (Release)|Win32'">"$(QTDIR)"\bin\moc -o src\Inventor\Qt\viewers\moc_SoQtPlaneViewerP.icc ..\..\src\Inventor\Qt\viewers\SoQtPlaneViewerP.h
+      <Command Condition="'$(Configuration)|$(Platform)'=='LIB (Release)|Win32'">$(QTDIR)\bin\moc -o src\Inventor\Qt\viewers\moc_SoQtPlaneViewerP.icc ..\..\src\Inventor\Qt\viewers\SoQtPlaneViewerP.h
 </Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='LIB (Release)|Win32'">src\Inventor\Qt\viewers\moc_SoQtPlaneViewerP.icc;%(Outputs)</Outputs>
     </CustomBuild>
     <CustomBuild Include="..\..\src\Inventor\Qt\widgets\QtNativePopupMenu.h">
       <Message Condition="'$(Configuration)|$(Platform)'=='DLL (Debug)|Win32'">moc%27ing %(FullPath)</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='DLL (Debug)|Win32'">"$(QTDIR)"\bin\moc -o src\Inventor\Qt\widgets\moc_QtNativePopupMenu.icc ..\..\src\Inventor\Qt\widgets\QtNativePopupMenu.h
+      <Command Condition="'$(Configuration)|$(Platform)'=='DLL (Debug)|Win32'">$(QTDIR)\bin\moc -o src\Inventor\Qt\widgets\moc_QtNativePopupMenu.icc ..\..\src\Inventor\Qt\widgets\QtNativePopupMenu.h
 </Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='DLL (Debug)|Win32'">src\Inventor\Qt\widgets\moc_QtNativePopupMenu.icc;%(Outputs)</Outputs>
       <Message Condition="'$(Configuration)|$(Platform)'=='DLL (Release)|Win32'">moc%27ing %(FullPath)</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='DLL (Release)|Win32'">"$(QTDIR)"\bin\moc -o src\Inventor\Qt\widgets\moc_QtNativePopupMenu.icc ..\..\src\Inventor\Qt\widgets\QtNativePopupMenu.h
+      <Command Condition="'$(Configuration)|$(Platform)'=='DLL (Release)|Win32'">$(QTDIR)\bin\moc -o src\Inventor\Qt\widgets\moc_QtNativePopupMenu.icc ..\..\src\Inventor\Qt\widgets\QtNativePopupMenu.h
 </Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='DLL (Release)|Win32'">src\Inventor\Qt\widgets\moc_QtNativePopupMenu.icc;%(Outputs)</Outputs>
       <Message Condition="'$(Configuration)|$(Platform)'=='LIB (Debug)|Win32'">moc%27ing %(FullPath)</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='LIB (Debug)|Win32'">"$(QTDIR)"\bin\moc -o src\Inventor\Qt\widgets\moc_QtNativePopupMenu.icc ..\..\src\Inventor\Qt\widgets\QtNativePopupMenu.h
+      <Command Condition="'$(Configuration)|$(Platform)'=='LIB (Debug)|Win32'">$(QTDIR)\bin\moc -o src\Inventor\Qt\widgets\moc_QtNativePopupMenu.icc ..\..\src\Inventor\Qt\widgets\QtNativePopupMenu.h
 </Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='LIB (Debug)|Win32'">src\Inventor\Qt\widgets\moc_QtNativePopupMenu.icc;%(Outputs)</Outputs>
       <Message Condition="'$(Configuration)|$(Platform)'=='LIB (Release)|Win32'">moc%27ing %(FullPath)</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='LIB (Release)|Win32'">"$(QTDIR)"\bin\moc -o src\Inventor\Qt\widgets\moc_QtNativePopupMenu.icc ..\..\src\Inventor\Qt\widgets\QtNativePopupMenu.h
+      <Command Condition="'$(Configuration)|$(Platform)'=='LIB (Release)|Win32'">$(QTDIR)\bin\moc -o src\Inventor\Qt\widgets\moc_QtNativePopupMenu.icc ..\..\src\Inventor\Qt\widgets\QtNativePopupMenu.h
 </Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='LIB (Release)|Win32'">src\Inventor\Qt\widgets\moc_QtNativePopupMenu.icc;%(Outputs)</Outputs>
     </CustomBuild>
     <CustomBuild Include="..\..\src\Inventor\Qt\widgets\SoQtGLArea.h">
       <Message Condition="'$(Configuration)|$(Platform)'=='DLL (Debug)|Win32'">moc%27ing %(FullPath)</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='DLL (Debug)|Win32'">"$(QTDIR)"\bin\moc -o src\Inventor\Qt\widgets\moc_SoQtGLArea.icc ..\..\src\Inventor\Qt\widgets\SoQtGLArea.h
+      <Command Condition="'$(Configuration)|$(Platform)'=='DLL (Debug)|Win32'">$(QTDIR)\bin\moc -o src\Inventor\Qt\widgets\moc_SoQtGLArea.icc ..\..\src\Inventor\Qt\widgets\SoQtGLArea.h
 </Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='DLL (Debug)|Win32'">src\Inventor\Qt\widgets\moc_SoQtGLArea.icc;%(Outputs)</Outputs>
       <Message Condition="'$(Configuration)|$(Platform)'=='DLL (Release)|Win32'">moc%27ing %(FullPath)</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='DLL (Release)|Win32'">"$(QTDIR)"\bin\moc -o src\Inventor\Qt\widgets\moc_SoQtGLArea.icc ..\..\src\Inventor\Qt\widgets\SoQtGLArea.h
+      <Command Condition="'$(Configuration)|$(Platform)'=='DLL (Release)|Win32'">$(QTDIR)\bin\moc -o src\Inventor\Qt\widgets\moc_SoQtGLArea.icc ..\..\src\Inventor\Qt\widgets\SoQtGLArea.h
 </Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='DLL (Release)|Win32'">src\Inventor\Qt\widgets\moc_SoQtGLArea.icc;%(Outputs)</Outputs>
       <Message Condition="'$(Configuration)|$(Platform)'=='LIB (Debug)|Win32'">moc%27ing %(FullPath)</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='LIB (Debug)|Win32'">"$(QTDIR)"\bin\moc -o src\Inventor\Qt\widgets\moc_SoQtGLArea.icc ..\..\src\Inventor\Qt\widgets\SoQtGLArea.h
+      <Command Condition="'$(Configuration)|$(Platform)'=='LIB (Debug)|Win32'">$(QTDIR)\bin\moc -o src\Inventor\Qt\widgets\moc_SoQtGLArea.icc ..\..\src\Inventor\Qt\widgets\SoQtGLArea.h
 </Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='LIB (Debug)|Win32'">src\Inventor\Qt\widgets\moc_SoQtGLArea.icc;%(Outputs)</Outputs>
       <Message Condition="'$(Configuration)|$(Platform)'=='LIB (Release)|Win32'">moc%27ing %(FullPath)</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='LIB (Release)|Win32'">"$(QTDIR)"\bin\moc -o src\Inventor\Qt\widgets\moc_SoQtGLArea.icc ..\..\src\Inventor\Qt\widgets\SoQtGLArea.h
+      <Command Condition="'$(Configuration)|$(Platform)'=='LIB (Release)|Win32'">$(QTDIR)\bin\moc -o src\Inventor\Qt\widgets\moc_SoQtGLArea.icc ..\..\src\Inventor\Qt\widgets\SoQtGLArea.h
 </Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='LIB (Release)|Win32'">src\Inventor\Qt\widgets\moc_SoQtGLArea.icc;%(Outputs)</Outputs>
     </CustomBuild>
     <CustomBuild Include="..\..\src\Inventor\Qt\widgets\SoQtThumbWheel.h">
       <Message Condition="'$(Configuration)|$(Platform)'=='DLL (Debug)|Win32'">moc%27ing %(FullPath)</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='DLL (Debug)|Win32'">"$(QTDIR)"\bin\moc -o src\Inventor\Qt\widgets\moc_SoQtThumbWheel.icc ..\..\src\Inventor\Qt\widgets\SoQtThumbWheel.h
+      <Command Condition="'$(Configuration)|$(Platform)'=='DLL (Debug)|Win32'">$(QTDIR)\bin\moc -o src\Inventor\Qt\widgets\moc_SoQtThumbWheel.icc ..\..\src\Inventor\Qt\widgets\SoQtThumbWheel.h
 </Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='DLL (Debug)|Win32'">src\Inventor\Qt\widgets\moc_SoQtThumbWheel.icc;%(Outputs)</Outputs>
       <Message Condition="'$(Configuration)|$(Platform)'=='DLL (Release)|Win32'">moc%27ing %(FullPath)</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='DLL (Release)|Win32'">"$(QTDIR)"\bin\moc -o src\Inventor\Qt\widgets\moc_SoQtThumbWheel.icc ..\..\src\Inventor\Qt\widgets\SoQtThumbWheel.h
+      <Command Condition="'$(Configuration)|$(Platform)'=='DLL (Release)|Win32'">$(QTDIR)\bin\moc -o src\Inventor\Qt\widgets\moc_SoQtThumbWheel.icc ..\..\src\Inventor\Qt\widgets\SoQtThumbWheel.h
 </Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='DLL (Release)|Win32'">src\Inventor\Qt\widgets\moc_SoQtThumbWheel.icc;%(Outputs)</Outputs>
       <Message Condition="'$(Configuration)|$(Platform)'=='LIB (Debug)|Win32'">moc%27ing %(FullPath)</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='LIB (Debug)|Win32'">"$(QTDIR)"\bin\moc -o src\Inventor\Qt\widgets\moc_SoQtThumbWheel.icc ..\..\src\Inventor\Qt\widgets\SoQtThumbWheel.h
+      <Command Condition="'$(Configuration)|$(Platform)'=='LIB (Debug)|Win32'">$(QTDIR)\bin\moc -o src\Inventor\Qt\widgets\moc_SoQtThumbWheel.icc ..\..\src\Inventor\Qt\widgets\SoQtThumbWheel.h
 </Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='LIB (Debug)|Win32'">src\Inventor\Qt\widgets\moc_SoQtThumbWheel.icc;%(Outputs)</Outputs>
       <Message Condition="'$(Configuration)|$(Platform)'=='LIB (Release)|Win32'">moc%27ing %(FullPath)</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='LIB (Release)|Win32'">"$(QTDIR)"\bin\moc -o src\Inventor\Qt\widgets\moc_SoQtThumbWheel.icc ..\..\src\Inventor\Qt\widgets\SoQtThumbWheel.h
+      <Command Condition="'$(Configuration)|$(Platform)'=='LIB (Release)|Win32'">$(QTDIR)\bin\moc -o src\Inventor\Qt\widgets\moc_SoQtThumbWheel.icc ..\..\src\Inventor\Qt\widgets\SoQtThumbWheel.h
 </Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='LIB (Release)|Win32'">src\Inventor\Qt\widgets\moc_SoQtThumbWheel.icc;%(Outputs)</Outputs>
     </CustomBuild>

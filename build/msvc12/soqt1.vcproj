@@ -73,7 +73,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="$(QTDIR)\lib\QtOpenGL4.lib $(QTDIR)\lib\QtGui4.lib $(QTDIR)\lib\QtCore4.lib $(COINDIR)\lib\coin3d.lib opengl32.lib"
+				AdditionalDependencies="$(QTDIR)\lib\Qt5OpenGL.lib $(QTDIR)\lib\Qt5Gui.lib $(QTDIR)\lib\Qt5Widgets.lib $(QTDIR)\lib\Qt5Core.lib $(COINDIR)\lib\coin3d.lib opengl32.lib"
 				OutputFile="soqt1.dll"
 				LinkIncremental="1"
 				SuppressStartupBanner="true"
@@ -311,7 +311,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="$(QTDIR)\lib\QtOpenGLd4.lib $(QTDIR)\lib\QtGuid4.lib $(QTDIR)\lib\QtCored4.lib $(COINDIR)\lib\coin3d.lib opengl32.lib"
+				AdditionalDependencies="$(QTDIR)\lib\Qt5OpenGLd.lib $(QTDIR)\lib\Qt5Widgetsd.lib $(QTDIR)\lib\Qt5Guid.lib $(QTDIR)\lib\Qt5Cored.lib $(COINDIR)\lib\coin3d.lib opengl32.lib"
 				OutputFile="soqt1d.dll"
 				LinkIncremental="1"
 				SuppressStartupBanner="true"
@@ -6868,7 +6868,7 @@
 						<Tool
 							Name="VCCustomBuildTool"
 							Description="moc&apos;ing $(InputPath)"
-							CommandLine="&quot;$(QTDIR)&quot;\bin\moc -o src\Inventor\Qt\viewers\moc_SoQtExaminerViewerP.icc ..\..\src\Inventor\Qt\viewers\SoQtExaminerViewerP.h&#x0D;&#x0A;"
+							CommandLine="$(QTDIR)\bin\moc -o src\Inventor\Qt\viewers\moc_SoQtExaminerViewerP.icc ..\..\src\Inventor\Qt\viewers\SoQtExaminerViewerP.h&#x0D;&#x0A;"
 							Outputs="src\Inventor\Qt\viewers\moc_SoQtExaminerViewerP.icc"
 						/>
 					</FileConfiguration>
@@ -6878,7 +6878,7 @@
 						<Tool
 							Name="VCCustomBuildTool"
 							Description="moc&apos;ing $(InputPath)"
-							CommandLine="&quot;$(QTDIR)&quot;\bin\moc -o src\Inventor\Qt\viewers\moc_SoQtExaminerViewerP.icc ..\..\src\Inventor\Qt\viewers\SoQtExaminerViewerP.h&#x0D;&#x0A;"
+							CommandLine="$(QTDIR)\bin\moc -o src\Inventor\Qt\viewers\moc_SoQtExaminerViewerP.icc ..\..\src\Inventor\Qt\viewers\SoQtExaminerViewerP.h&#x0D;&#x0A;"
 							Outputs="src\Inventor\Qt\viewers\moc_SoQtExaminerViewerP.icc"
 						/>
 					</FileConfiguration>
@@ -6888,7 +6888,7 @@
 						<Tool
 							Name="VCCustomBuildTool"
 							Description="moc&apos;ing $(InputPath)"
-							CommandLine="&quot;$(QTDIR)&quot;\bin\moc -o src\Inventor\Qt\viewers\moc_SoQtExaminerViewerP.icc ..\..\src\Inventor\Qt\viewers\SoQtExaminerViewerP.h&#x0D;&#x0A;"
+							CommandLine="$(QTDIR)\bin\moc -o src\Inventor\Qt\viewers\moc_SoQtExaminerViewerP.icc ..\..\src\Inventor\Qt\viewers\SoQtExaminerViewerP.h&#x0D;&#x0A;"
 							Outputs="src\Inventor\Qt\viewers\moc_SoQtExaminerViewerP.icc"
 						/>
 					</FileConfiguration>
@@ -6898,7 +6898,7 @@
 						<Tool
 							Name="VCCustomBuildTool"
 							Description="moc&apos;ing $(InputPath)"
-							CommandLine="&quot;$(QTDIR)&quot;\bin\moc -o src\Inventor\Qt\viewers\moc_SoQtExaminerViewerP.icc ..\..\src\Inventor\Qt\viewers\SoQtExaminerViewerP.h&#x0D;&#x0A;"
+							CommandLine="$(QTDIR)\bin\moc -o src\Inventor\Qt\viewers\moc_SoQtExaminerViewerP.icc ..\..\src\Inventor\Qt\viewers\SoQtExaminerViewerP.h&#x0D;&#x0A;"
 							Outputs="src\Inventor\Qt\viewers\moc_SoQtExaminerViewerP.icc"
 						/>
 					</FileConfiguration>
@@ -7020,7 +7020,7 @@
 						<Tool
 							Name="VCCustomBuildTool"
 							Description="moc&apos;ing $(InputPath)"
-							CommandLine="&quot;$(QTDIR)&quot;\bin\moc -o src\Inventor\Qt\viewers\moc_SoQtFullViewerP.icc ..\..\src\Inventor\Qt\viewers\SoQtFullViewerP.h&#x0D;&#x0A;"
+							CommandLine="$(QTDIR)\bin\moc -o src\Inventor\Qt\viewers\moc_SoQtFullViewerP.icc ..\..\src\Inventor\Qt\viewers\SoQtFullViewerP.h&#x0D;&#x0A;"
 							Outputs="src\Inventor\Qt\viewers\moc_SoQtFullViewerP.icc"
 						/>
 					</FileConfiguration>
@@ -7030,7 +7030,7 @@
 						<Tool
 							Name="VCCustomBuildTool"
 							Description="moc&apos;ing $(InputPath)"
-							CommandLine="&quot;$(QTDIR)&quot;\bin\moc -o src\Inventor\Qt\viewers\moc_SoQtFullViewerP.icc ..\..\src\Inventor\Qt\viewers\SoQtFullViewerP.h&#x0D;&#x0A;"
+							CommandLine="$(QTDIR)\bin\moc -o src\Inventor\Qt\viewers\moc_SoQtFullViewerP.icc ..\..\src\Inventor\Qt\viewers\SoQtFullViewerP.h&#x0D;&#x0A;"
 							Outputs="src\Inventor\Qt\viewers\moc_SoQtFullViewerP.icc"
 						/>
 					</FileConfiguration>
@@ -7040,7 +7040,7 @@
 						<Tool
 							Name="VCCustomBuildTool"
 							Description="moc&apos;ing $(InputPath)"
-							CommandLine="&quot;$(QTDIR)&quot;\bin\moc -o src\Inventor\Qt\viewers\moc_SoQtFullViewerP.icc ..\..\src\Inventor\Qt\viewers\SoQtFullViewerP.h&#x0D;&#x0A;"
+							CommandLine="$(QTDIR)\bin\moc -o src\Inventor\Qt\viewers\moc_SoQtFullViewerP.icc ..\..\src\Inventor\Qt\viewers\SoQtFullViewerP.h&#x0D;&#x0A;"
 							Outputs="src\Inventor\Qt\viewers\moc_SoQtFullViewerP.icc"
 						/>
 					</FileConfiguration>
@@ -7050,7 +7050,7 @@
 						<Tool
 							Name="VCCustomBuildTool"
 							Description="moc&apos;ing $(InputPath)"
-							CommandLine="&quot;$(QTDIR)&quot;\bin\moc -o src\Inventor\Qt\viewers\moc_SoQtFullViewerP.icc ..\..\src\Inventor\Qt\viewers\SoQtFullViewerP.h&#x0D;&#x0A;"
+							CommandLine="$(QTDIR)\bin\moc -o src\Inventor\Qt\viewers\moc_SoQtFullViewerP.icc ..\..\src\Inventor\Qt\viewers\SoQtFullViewerP.h&#x0D;&#x0A;"
 							Outputs="src\Inventor\Qt\viewers\moc_SoQtFullViewerP.icc"
 						/>
 					</FileConfiguration>
@@ -7118,7 +7118,7 @@
 						<Tool
 							Name="VCCustomBuildTool"
 							Description="moc&apos;ing $(InputPath)"
-							CommandLine="&quot;$(QTDIR)&quot;\bin\moc -o src\Inventor\Qt\viewers\moc_SoQtPlaneViewerP.icc ..\..\src\Inventor\Qt\viewers\SoQtPlaneViewerP.h&#x0D;&#x0A;"
+							CommandLine="$(QTDIR)\bin\moc -o src\Inventor\Qt\viewers\moc_SoQtPlaneViewerP.icc ..\..\src\Inventor\Qt\viewers\SoQtPlaneViewerP.h&#x0D;&#x0A;"
 							Outputs="src\Inventor\Qt\viewers\moc_SoQtPlaneViewerP.icc"
 						/>
 					</FileConfiguration>
@@ -7128,7 +7128,7 @@
 						<Tool
 							Name="VCCustomBuildTool"
 							Description="moc&apos;ing $(InputPath)"
-							CommandLine="&quot;$(QTDIR)&quot;\bin\moc -o src\Inventor\Qt\viewers\moc_SoQtPlaneViewerP.icc ..\..\src\Inventor\Qt\viewers\SoQtPlaneViewerP.h&#x0D;&#x0A;"
+							CommandLine="$(QTDIR)\bin\moc -o src\Inventor\Qt\viewers\moc_SoQtPlaneViewerP.icc ..\..\src\Inventor\Qt\viewers\SoQtPlaneViewerP.h&#x0D;&#x0A;"
 							Outputs="src\Inventor\Qt\viewers\moc_SoQtPlaneViewerP.icc"
 						/>
 					</FileConfiguration>
@@ -7138,7 +7138,7 @@
 						<Tool
 							Name="VCCustomBuildTool"
 							Description="moc&apos;ing $(InputPath)"
-							CommandLine="&quot;$(QTDIR)&quot;\bin\moc -o src\Inventor\Qt\viewers\moc_SoQtPlaneViewerP.icc ..\..\src\Inventor\Qt\viewers\SoQtPlaneViewerP.h&#x0D;&#x0A;"
+							CommandLine="$(QTDIR)\bin\moc -o src\Inventor\Qt\viewers\moc_SoQtPlaneViewerP.icc ..\..\src\Inventor\Qt\viewers\SoQtPlaneViewerP.h&#x0D;&#x0A;"
 							Outputs="src\Inventor\Qt\viewers\moc_SoQtPlaneViewerP.icc"
 						/>
 					</FileConfiguration>
@@ -7148,7 +7148,7 @@
 						<Tool
 							Name="VCCustomBuildTool"
 							Description="moc&apos;ing $(InputPath)"
-							CommandLine="&quot;$(QTDIR)&quot;\bin\moc -o src\Inventor\Qt\viewers\moc_SoQtPlaneViewerP.icc ..\..\src\Inventor\Qt\viewers\SoQtPlaneViewerP.h&#x0D;&#x0A;"
+							CommandLine="$(QTDIR)\bin\moc -o src\Inventor\Qt\viewers\moc_SoQtPlaneViewerP.icc ..\..\src\Inventor\Qt\viewers\SoQtPlaneViewerP.h&#x0D;&#x0A;"
 							Outputs="src\Inventor\Qt\viewers\moc_SoQtPlaneViewerP.icc"
 						/>
 					</FileConfiguration>
@@ -7275,7 +7275,7 @@
 						<Tool
 							Name="VCCustomBuildTool"
 							Description="moc&apos;ing $(InputPath)"
-							CommandLine="&quot;$(QTDIR)&quot;\bin\moc -o src\Inventor\Qt\widgets\moc_QtNativePopupMenu.icc ..\..\src\Inventor\Qt\widgets\QtNativePopupMenu.h&#x0D;&#x0A;"
+							CommandLine="$(QTDIR)\bin\moc -o src\Inventor\Qt\widgets\moc_QtNativePopupMenu.icc ..\..\src\Inventor\Qt\widgets\QtNativePopupMenu.h&#x0D;&#x0A;"
 							Outputs="src\Inventor\Qt\widgets\moc_QtNativePopupMenu.icc"
 						/>
 					</FileConfiguration>
@@ -7285,7 +7285,7 @@
 						<Tool
 							Name="VCCustomBuildTool"
 							Description="moc&apos;ing $(InputPath)"
-							CommandLine="&quot;$(QTDIR)&quot;\bin\moc -o src\Inventor\Qt\widgets\moc_QtNativePopupMenu.icc ..\..\src\Inventor\Qt\widgets\QtNativePopupMenu.h&#x0D;&#x0A;"
+							CommandLine="$(QTDIR)\bin\moc -o src\Inventor\Qt\widgets\moc_QtNativePopupMenu.icc ..\..\src\Inventor\Qt\widgets\QtNativePopupMenu.h&#x0D;&#x0A;"
 							Outputs="src\Inventor\Qt\widgets\moc_QtNativePopupMenu.icc"
 						/>
 					</FileConfiguration>
@@ -7295,7 +7295,7 @@
 						<Tool
 							Name="VCCustomBuildTool"
 							Description="moc&apos;ing $(InputPath)"
-							CommandLine="&quot;$(QTDIR)&quot;\bin\moc -o src\Inventor\Qt\widgets\moc_QtNativePopupMenu.icc ..\..\src\Inventor\Qt\widgets\QtNativePopupMenu.h&#x0D;&#x0A;"
+							CommandLine="$(QTDIR)\bin\moc -o src\Inventor\Qt\widgets\moc_QtNativePopupMenu.icc ..\..\src\Inventor\Qt\widgets\QtNativePopupMenu.h&#x0D;&#x0A;"
 							Outputs="src\Inventor\Qt\widgets\moc_QtNativePopupMenu.icc"
 						/>
 					</FileConfiguration>
@@ -7305,7 +7305,7 @@
 						<Tool
 							Name="VCCustomBuildTool"
 							Description="moc&apos;ing $(InputPath)"
-							CommandLine="&quot;$(QTDIR)&quot;\bin\moc -o src\Inventor\Qt\widgets\moc_QtNativePopupMenu.icc ..\..\src\Inventor\Qt\widgets\QtNativePopupMenu.h&#x0D;&#x0A;"
+							CommandLine="$(QTDIR)\bin\moc -o src\Inventor\Qt\widgets\moc_QtNativePopupMenu.icc ..\..\src\Inventor\Qt\widgets\QtNativePopupMenu.h&#x0D;&#x0A;"
 							Outputs="src\Inventor\Qt\widgets\moc_QtNativePopupMenu.icc"
 						/>
 					</FileConfiguration>
@@ -7427,7 +7427,7 @@
 						<Tool
 							Name="VCCustomBuildTool"
 							Description="moc&apos;ing $(InputPath)"
-							CommandLine="&quot;$(QTDIR)&quot;\bin\moc -o src\Inventor\Qt\widgets\moc_SoQtGLArea.icc ..\..\src\Inventor\Qt\widgets\SoQtGLArea.h&#x0D;&#x0A;"
+							CommandLine="$(QTDIR)\bin\moc -o src\Inventor\Qt\widgets\moc_SoQtGLArea.icc ..\..\src\Inventor\Qt\widgets\SoQtGLArea.h&#x0D;&#x0A;"
 							Outputs="src\Inventor\Qt\widgets\moc_SoQtGLArea.icc"
 						/>
 					</FileConfiguration>
@@ -7437,7 +7437,7 @@
 						<Tool
 							Name="VCCustomBuildTool"
 							Description="moc&apos;ing $(InputPath)"
-							CommandLine="&quot;$(QTDIR)&quot;\bin\moc -o src\Inventor\Qt\widgets\moc_SoQtGLArea.icc ..\..\src\Inventor\Qt\widgets\SoQtGLArea.h&#x0D;&#x0A;"
+							CommandLine="$(QTDIR)\bin\moc -o src\Inventor\Qt\widgets\moc_SoQtGLArea.icc ..\..\src\Inventor\Qt\widgets\SoQtGLArea.h&#x0D;&#x0A;"
 							Outputs="src\Inventor\Qt\widgets\moc_SoQtGLArea.icc"
 						/>
 					</FileConfiguration>
@@ -7447,7 +7447,7 @@
 						<Tool
 							Name="VCCustomBuildTool"
 							Description="moc&apos;ing $(InputPath)"
-							CommandLine="&quot;$(QTDIR)&quot;\bin\moc -o src\Inventor\Qt\widgets\moc_SoQtGLArea.icc ..\..\src\Inventor\Qt\widgets\SoQtGLArea.h&#x0D;&#x0A;"
+							CommandLine="$(QTDIR)\bin\moc -o src\Inventor\Qt\widgets\moc_SoQtGLArea.icc ..\..\src\Inventor\Qt\widgets\SoQtGLArea.h&#x0D;&#x0A;"
 							Outputs="src\Inventor\Qt\widgets\moc_SoQtGLArea.icc"
 						/>
 					</FileConfiguration>
@@ -7457,7 +7457,7 @@
 						<Tool
 							Name="VCCustomBuildTool"
 							Description="moc&apos;ing $(InputPath)"
-							CommandLine="&quot;$(QTDIR)&quot;\bin\moc -o src\Inventor\Qt\widgets\moc_SoQtGLArea.icc ..\..\src\Inventor\Qt\widgets\SoQtGLArea.h&#x0D;&#x0A;"
+							CommandLine="$(QTDIR)\bin\moc -o src\Inventor\Qt\widgets\moc_SoQtGLArea.icc ..\..\src\Inventor\Qt\widgets\SoQtGLArea.h&#x0D;&#x0A;"
 							Outputs="src\Inventor\Qt\widgets\moc_SoQtGLArea.icc"
 						/>
 					</FileConfiguration>
@@ -7579,7 +7579,7 @@
 						<Tool
 							Name="VCCustomBuildTool"
 							Description="moc&apos;ing $(InputPath)"
-							CommandLine="&quot;$(QTDIR)&quot;\bin\moc -o src\Inventor\Qt\widgets\moc_SoQtThumbWheel.icc ..\..\src\Inventor\Qt\widgets\SoQtThumbWheel.h&#x0D;&#x0A;"
+							CommandLine="$(QTDIR)\bin\moc -o src\Inventor\Qt\widgets\moc_SoQtThumbWheel.icc ..\..\src\Inventor\Qt\widgets\SoQtThumbWheel.h&#x0D;&#x0A;"
 							Outputs="src\Inventor\Qt\widgets\moc_SoQtThumbWheel.icc"
 						/>
 					</FileConfiguration>
@@ -7589,7 +7589,7 @@
 						<Tool
 							Name="VCCustomBuildTool"
 							Description="moc&apos;ing $(InputPath)"
-							CommandLine="&quot;$(QTDIR)&quot;\bin\moc -o src\Inventor\Qt\widgets\moc_SoQtThumbWheel.icc ..\..\src\Inventor\Qt\widgets\SoQtThumbWheel.h&#x0D;&#x0A;"
+							CommandLine="$(QTDIR)\bin\moc -o src\Inventor\Qt\widgets\moc_SoQtThumbWheel.icc ..\..\src\Inventor\Qt\widgets\SoQtThumbWheel.h&#x0D;&#x0A;"
 							Outputs="src\Inventor\Qt\widgets\moc_SoQtThumbWheel.icc"
 						/>
 					</FileConfiguration>
@@ -7599,7 +7599,7 @@
 						<Tool
 							Name="VCCustomBuildTool"
 							Description="moc&apos;ing $(InputPath)"
-							CommandLine="&quot;$(QTDIR)&quot;\bin\moc -o src\Inventor\Qt\widgets\moc_SoQtThumbWheel.icc ..\..\src\Inventor\Qt\widgets\SoQtThumbWheel.h&#x0D;&#x0A;"
+							CommandLine="$(QTDIR)\bin\moc -o src\Inventor\Qt\widgets\moc_SoQtThumbWheel.icc ..\..\src\Inventor\Qt\widgets\SoQtThumbWheel.h&#x0D;&#x0A;"
 							Outputs="src\Inventor\Qt\widgets\moc_SoQtThumbWheel.icc"
 						/>
 					</FileConfiguration>
@@ -7609,7 +7609,7 @@
 						<Tool
 							Name="VCCustomBuildTool"
 							Description="moc&apos;ing $(InputPath)"
-							CommandLine="&quot;$(QTDIR)&quot;\bin\moc -o src\Inventor\Qt\widgets\moc_SoQtThumbWheel.icc ..\..\src\Inventor\Qt\widgets\SoQtThumbWheel.h&#x0D;&#x0A;"
+							CommandLine="$(QTDIR)\bin\moc -o src\Inventor\Qt\widgets\moc_SoQtThumbWheel.icc ..\..\src\Inventor\Qt\widgets\SoQtThumbWheel.h&#x0D;&#x0A;"
 							Outputs="src\Inventor\Qt\widgets\moc_SoQtThumbWheel.icc"
 						/>
 					</FileConfiguration>
@@ -7898,7 +7898,7 @@
 						<Tool
 							Name="VCCustomBuildTool"
 							Description="moc&apos;ing $(InputPath)"
-							CommandLine="&quot;$(QTDIR)&quot;\bin\moc -o src\Inventor\Qt\moc_SoQtComponentP.icc ..\..\src\Inventor\Qt\SoQtComponentP.h&#x0D;&#x0A;"
+							CommandLine="$(QTDIR)\bin\moc -o src\Inventor\Qt\moc_SoQtComponentP.icc ..\..\src\Inventor\Qt\SoQtComponentP.h&#x0D;&#x0A;"
 							Outputs="src\Inventor\Qt\moc_SoQtComponentP.icc"
 						/>
 					</FileConfiguration>
@@ -7908,7 +7908,7 @@
 						<Tool
 							Name="VCCustomBuildTool"
 							Description="moc&apos;ing $(InputPath)"
-							CommandLine="&quot;$(QTDIR)&quot;\bin\moc -o src\Inventor\Qt\moc_SoQtComponentP.icc ..\..\src\Inventor\Qt\SoQtComponentP.h&#x0D;&#x0A;"
+							CommandLine="$(QTDIR)\bin\moc -o src\Inventor\Qt\moc_SoQtComponentP.icc ..\..\src\Inventor\Qt\SoQtComponentP.h&#x0D;&#x0A;"
 							Outputs="src\Inventor\Qt\moc_SoQtComponentP.icc"
 						/>
 					</FileConfiguration>
@@ -7918,7 +7918,7 @@
 						<Tool
 							Name="VCCustomBuildTool"
 							Description="moc&apos;ing $(InputPath)"
-							CommandLine="&quot;$(QTDIR)&quot;\bin\moc -o src\Inventor\Qt\moc_SoQtComponentP.icc ..\..\src\Inventor\Qt\SoQtComponentP.h&#x0D;&#x0A;"
+							CommandLine="$(QTDIR)\bin\moc -o src\Inventor\Qt\moc_SoQtComponentP.icc ..\..\src\Inventor\Qt\SoQtComponentP.h&#x0D;&#x0A;"
 							Outputs="src\Inventor\Qt\moc_SoQtComponentP.icc"
 						/>
 					</FileConfiguration>
@@ -7928,7 +7928,7 @@
 						<Tool
 							Name="VCCustomBuildTool"
 							Description="moc&apos;ing $(InputPath)"
-							CommandLine="&quot;$(QTDIR)&quot;\bin\moc -o src\Inventor\Qt\moc_SoQtComponentP.icc ..\..\src\Inventor\Qt\SoQtComponentP.h&#x0D;&#x0A;"
+							CommandLine="$(QTDIR)\bin\moc -o src\Inventor\Qt\moc_SoQtComponentP.icc ..\..\src\Inventor\Qt\SoQtComponentP.h&#x0D;&#x0A;"
 							Outputs="src\Inventor\Qt\moc_SoQtComponentP.icc"
 						/>
 					</FileConfiguration>
@@ -8104,7 +8104,7 @@
 						<Tool
 							Name="VCCustomBuildTool"
 							Description="moc&apos;ing $(InputPath)"
-							CommandLine="&quot;$(QTDIR)&quot;\bin\moc -o src\Inventor\Qt\moc_SoQtGLWidgetP.icc ..\..\src\Inventor\Qt\SoQtGLWidgetP.h&#x0D;&#x0A;"
+							CommandLine="$(QTDIR)\bin\moc -o src\Inventor\Qt\moc_SoQtGLWidgetP.icc ..\..\src\Inventor\Qt\SoQtGLWidgetP.h&#x0D;&#x0A;"
 							Outputs="src\Inventor\Qt\moc_SoQtGLWidgetP.icc"
 						/>
 					</FileConfiguration>
@@ -8114,7 +8114,7 @@
 						<Tool
 							Name="VCCustomBuildTool"
 							Description="moc&apos;ing $(InputPath)"
-							CommandLine="&quot;$(QTDIR)&quot;\bin\moc -o src\Inventor\Qt\moc_SoQtGLWidgetP.icc ..\..\src\Inventor\Qt\SoQtGLWidgetP.h&#x0D;&#x0A;"
+							CommandLine="$(QTDIR)\bin\moc -o src\Inventor\Qt\moc_SoQtGLWidgetP.icc ..\..\src\Inventor\Qt\SoQtGLWidgetP.h&#x0D;&#x0A;"
 							Outputs="src\Inventor\Qt\moc_SoQtGLWidgetP.icc"
 						/>
 					</FileConfiguration>
@@ -8124,7 +8124,7 @@
 						<Tool
 							Name="VCCustomBuildTool"
 							Description="moc&apos;ing $(InputPath)"
-							CommandLine="&quot;$(QTDIR)&quot;\bin\moc -o src\Inventor\Qt\moc_SoQtGLWidgetP.icc ..\..\src\Inventor\Qt\SoQtGLWidgetP.h&#x0D;&#x0A;"
+							CommandLine="$(QTDIR)\bin\moc -o src\Inventor\Qt\moc_SoQtGLWidgetP.icc ..\..\src\Inventor\Qt\SoQtGLWidgetP.h&#x0D;&#x0A;"
 							Outputs="src\Inventor\Qt\moc_SoQtGLWidgetP.icc"
 						/>
 					</FileConfiguration>
@@ -8134,7 +8134,7 @@
 						<Tool
 							Name="VCCustomBuildTool"
 							Description="moc&apos;ing $(InputPath)"
-							CommandLine="&quot;$(QTDIR)&quot;\bin\moc -o src\Inventor\Qt\moc_SoQtGLWidgetP.icc ..\..\src\Inventor\Qt\SoQtGLWidgetP.h&#x0D;&#x0A;"
+							CommandLine="$(QTDIR)\bin\moc -o src\Inventor\Qt\moc_SoQtGLWidgetP.icc ..\..\src\Inventor\Qt\SoQtGLWidgetP.h&#x0D;&#x0A;"
 							Outputs="src\Inventor\Qt\moc_SoQtGLWidgetP.icc"
 						/>
 					</FileConfiguration>
@@ -8256,7 +8256,7 @@
 						<Tool
 							Name="VCCustomBuildTool"
 							Description="moc&apos;ing $(InputPath)"
-							CommandLine="&quot;$(QTDIR)&quot;\bin\moc -o src\Inventor\Qt\moc_SoQtP.icc ..\..\src\Inventor\Qt\SoQtP.h&#x0D;&#x0A;"
+							CommandLine="$(QTDIR)\bin\moc -o src\Inventor\Qt\moc_SoQtP.icc ..\..\src\Inventor\Qt\SoQtP.h&#x0D;&#x0A;"
 							Outputs="src\Inventor\Qt\moc_SoQtP.icc"
 						/>
 					</FileConfiguration>
@@ -8266,7 +8266,7 @@
 						<Tool
 							Name="VCCustomBuildTool"
 							Description="moc&apos;ing $(InputPath)"
-							CommandLine="&quot;$(QTDIR)&quot;\bin\moc -o src\Inventor\Qt\moc_SoQtP.icc ..\..\src\Inventor\Qt\SoQtP.h&#x0D;&#x0A;"
+							CommandLine="$(QTDIR)\bin\moc -o src\Inventor\Qt\moc_SoQtP.icc ..\..\src\Inventor\Qt\SoQtP.h&#x0D;&#x0A;"
 							Outputs="src\Inventor\Qt\moc_SoQtP.icc"
 						/>
 					</FileConfiguration>
@@ -8276,7 +8276,7 @@
 						<Tool
 							Name="VCCustomBuildTool"
 							Description="moc&apos;ing $(InputPath)"
-							CommandLine="&quot;$(QTDIR)&quot;\bin\moc -o src\Inventor\Qt\moc_SoQtP.icc ..\..\src\Inventor\Qt\SoQtP.h&#x0D;&#x0A;"
+							CommandLine="$(QTDIR)\bin\moc -o src\Inventor\Qt\moc_SoQtP.icc ..\..\src\Inventor\Qt\SoQtP.h&#x0D;&#x0A;"
 							Outputs="src\Inventor\Qt\moc_SoQtP.icc"
 						/>
 					</FileConfiguration>
@@ -8286,7 +8286,7 @@
 						<Tool
 							Name="VCCustomBuildTool"
 							Description="moc&apos;ing $(InputPath)"
-							CommandLine="&quot;$(QTDIR)&quot;\bin\moc -o src\Inventor\Qt\moc_SoQtP.icc ..\..\src\Inventor\Qt\SoQtP.h&#x0D;&#x0A;"
+							CommandLine="$(QTDIR)\bin\moc -o src\Inventor\Qt\moc_SoQtP.icc ..\..\src\Inventor\Qt\SoQtP.h&#x0D;&#x0A;"
 							Outputs="src\Inventor\Qt\moc_SoQtP.icc"
 						/>
 					</FileConfiguration>
@@ -8408,7 +8408,7 @@
 						<Tool
 							Name="VCCustomBuildTool"
 							Description="moc&apos;ing $(InputPath)"
-							CommandLine="&quot;$(QTDIR)&quot;\bin\moc -o src\Inventor\Qt\moc_SoQtSignalThread.icc ..\..\src\Inventor\Qt\SoQtSignalThread.h&#x0D;&#x0A;"
+							CommandLine="$(QTDIR)\bin\moc -o src\Inventor\Qt\moc_SoQtSignalThread.icc ..\..\src\Inventor\Qt\SoQtSignalThread.h&#x0D;&#x0A;"
 							Outputs="src\Inventor\Qt\moc_SoQtSignalThread.icc"
 						/>
 					</FileConfiguration>
@@ -8418,7 +8418,7 @@
 						<Tool
 							Name="VCCustomBuildTool"
 							Description="moc&apos;ing $(InputPath)"
-							CommandLine="&quot;$(QTDIR)&quot;\bin\moc -o src\Inventor\Qt\moc_SoQtSignalThread.icc ..\..\src\Inventor\Qt\SoQtSignalThread.h&#x0D;&#x0A;"
+							CommandLine="$(QTDIR)\bin\moc -o src\Inventor\Qt\moc_SoQtSignalThread.icc ..\..\src\Inventor\Qt\SoQtSignalThread.h&#x0D;&#x0A;"
 							Outputs="src\Inventor\Qt\moc_SoQtSignalThread.icc"
 						/>
 					</FileConfiguration>
@@ -8428,7 +8428,7 @@
 						<Tool
 							Name="VCCustomBuildTool"
 							Description="moc&apos;ing $(InputPath)"
-							CommandLine="&quot;$(QTDIR)&quot;\bin\moc -o src\Inventor\Qt\moc_SoQtSignalThread.icc ..\..\src\Inventor\Qt\SoQtSignalThread.h&#x0D;&#x0A;"
+							CommandLine="$(QTDIR)\bin\moc -o src\Inventor\Qt\moc_SoQtSignalThread.icc ..\..\src\Inventor\Qt\SoQtSignalThread.h&#x0D;&#x0A;"
 							Outputs="src\Inventor\Qt\moc_SoQtSignalThread.icc"
 						/>
 					</FileConfiguration>
@@ -8438,7 +8438,7 @@
 						<Tool
 							Name="VCCustomBuildTool"
 							Description="moc&apos;ing $(InputPath)"
-							CommandLine="&quot;$(QTDIR)&quot;\bin\moc -o src\Inventor\Qt\moc_SoQtSignalThread.icc ..\..\src\Inventor\Qt\SoQtSignalThread.h&#x0D;&#x0A;"
+							CommandLine="$(QTDIR)\bin\moc -o src\Inventor\Qt\moc_SoQtSignalThread.icc ..\..\src\Inventor\Qt\SoQtSignalThread.h&#x0D;&#x0A;"
 							Outputs="src\Inventor\Qt\moc_SoQtSignalThread.icc"
 						/>
 					</FileConfiguration>

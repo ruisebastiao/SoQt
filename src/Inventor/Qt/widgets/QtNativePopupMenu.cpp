@@ -42,6 +42,9 @@
 #include <qaction.h>
 #include <qpopupmenu.h>
 #define QPOPUPMENU_CLASS QPopupMenu
+#elif  QT_VERSION > 0x050000
+#include <QtWidgets\QMenu>
+
 #else // Qt 4.0.0+
 #include <QtGui/QMenu>
 #define QPOPUPMENU_CLASS QMenu
@@ -64,8 +67,13 @@ struct MenuRecord {
   char * name;
   char * title;
   QAction * action;
+#ifdef QT_VERSION >= 0x050000
+  QMenu * menu;
+  QMenu * parent;
+#elif
   QPOPUPMENU_CLASS * menu;
   QPOPUPMENU_CLASS * parent;
+#endif
 }; // struct MenuRecord
 
 struct ItemRecord {
@@ -74,7 +82,11 @@ struct ItemRecord {
   char * name;
   char * title;
   QAction * action;
+#ifdef QT_VERSION >= 0x050000
+  QMenu * parent;
+#elif
   QPOPUPMENU_CLASS * parent;
+#endif
 }; // struct ItemRecord
 
 #define ITEM_MARKED       0x0001
@@ -653,7 +665,11 @@ QtNativePopupMenu::createMenuRecord(
   rec->title = strcpy(new char [strlen(name)+1], name);
 
 #if QT_VERSION >= 0x040000
+#if QT_VERSION >= 0x050000
+  rec->menu = new QMenu(QString(name));
+#else
   rec->menu = new QPOPUPMENU_CLASS(QString(name));
+#endif
   QObject::connect(rec->menu, SIGNAL(triggered(QAction *)),
                    this, SLOT(itemActivation(QAction *)));
 #else
