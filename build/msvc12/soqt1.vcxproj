@@ -74,6 +74,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='LIB (Release)|Win32'">
     <OutDir>.\StaticRelease\</OutDir>
     <IntDir>.\StaticRelease\</IntDir>
+    <IncludePath>$(QTDIR)\include\QtGui;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtOpenGL;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='LIB (Debug)|Win32'">
     <OutDir>.\StaticDebug\</OutDir>
