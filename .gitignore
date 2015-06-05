@@ -13,9 +13,3 @@
 *.slo
 *.so
 build/
-obj/
-release/
-debug/
-Release/
-Debug/
-*Debug/
